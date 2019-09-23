@@ -34,8 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal">
 
         <ImageButton
@@ -48,16 +48,18 @@
         <TextView
             android:id="@+id/txtFilmName"
             android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:textSize="18dp"
+            android:layout_height="22dp"
             android:layout_marginLeft="10dp"
             android:layout_weight="2"
-            android:text="Na tra" />
+            android:text="Mắt biếc"
+            android:textStyle="bold"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/txtCurrentTime"
             android:gravity="right"
             android:paddingRight="10dp"
+            android:textSize="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
