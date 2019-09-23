@@ -17,6 +17,11 @@ public class CinemaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cinema);
         BottomNavigationView bottomNavigationView = findViewById(R.id.navigationBar);
         bottomNavigationView.setSelectedItemId(R.id.nav_cinema);
+        addBottomNavigationListener(bottomNavigationView);
+
+    }
+
+    private void addBottomNavigationListener(BottomNavigationView bottomNavigationView) {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -41,4 +46,5 @@ public class CinemaActivity extends AppCompatActivity {
             }
         });
     }
+
 }

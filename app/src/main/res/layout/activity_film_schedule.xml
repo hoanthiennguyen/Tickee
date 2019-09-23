@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".FilmScheduleActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="0dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rạp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thông tin phim" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#ffffff"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/txtFilmName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:text="Na tra" />
+
+        <TextView
+            android:id="@+id/txtCurrentTime"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="16:37" />
+    </LinearLayout>
+
+    <include layout="@layout/list_of_day"></include>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/cinemaContainer"
+        android:layout_below="@+id/daysContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/cineMegaGS"
+            android:onClick="onClickShowMore"
+            tools:context=".CinemaShortDescriptionFragment">
+
+            <!-- TODO: Update blank fragment layout -->
+            <TextView
+                android:id="@+id/txtCinemaMegaGS"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/MegaGS"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CNS" />
+
+            <TextView
+
+                android:id="@+id/txtStreet"
+                android:textSize="20dp"
+                android:layout_toRightOf="@id/txtCinemaMegaGS"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Hai Ba Trung" />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/txtDistance"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:text="1.0 km" />
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+        </RelativeLayout>
+        <RelativeLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/cinemaLotte"
+            android:onClick="onClickShowMore"
+            tools:context=".CinemaShortDescriptionFragment">
+
+            <!-- TODO: Update blank fragment layout -->
+            <TextView
+                android:id="@+id/txtCinemaLotte"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/Lotte"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lotte" />
+
+            <TextView
+
+                android:id="@+id/txtStreetLotte"
+                android:textSize="20dp"
+                android:layout_toRightOf="@id/txtCinemaLotte"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Hai Ba Trung" />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/txtDistanceLotte"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:text="2.2 km" />
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+        </RelativeLayout>
+        <RelativeLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/cinemaBHD"
+            android:onClick="onClickShowMore"
+            tools:context=".CinemaShortDescriptionFragment">
+
+            <!-- TODO: Update blank fragment layout -->
+            <TextView
+                android:id="@+id/txtCinemaCNS"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/CNS"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CNS" />
+
+            <TextView
+
+                android:id="@+id/txtStreeCNS"
+                android:textSize="20dp"
+                android:layout_toRightOf="@id/txtCinemaCNS"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- Hai Ba Trung" />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/txtDistanceCNS"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:text="2.2 km" />
+
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
