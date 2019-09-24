@@ -53,7 +53,9 @@ public class FilmScheduleActivity extends AppCompatActivity {
 
             }
         });
+
     }
+
 
 //        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 //        CinemaShortDescriptionFragment fragment = new CinemaShortDescriptionFragment("BHD","Hai Bà Trưng", "0.5 km");
@@ -69,10 +71,5 @@ public class FilmScheduleActivity extends AppCompatActivity {
 //        transaction.commit();
 
 
-    public void onClickShowMore(View view){
-        LayoutInflater inflater = (LayoutInflater) getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        ViewGroup parent = findViewById(view.getId());
-        parent.setMinimumHeight(70);
-        inflater.inflate(R.layout.movie_time_at_theater, parent);
-    }
+
 }

@@ -1,6 +1,7 @@
 package com.example.tickee;
 
 
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,6 +9,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
 
 /**
@@ -26,6 +29,14 @@ public class FilmInformationFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_film_information, container, false);
+        VideoView vid = view.findViewById(R.id.trailerFilm);
+        MediaController m = new MediaController(getActivity());
+        vid.setMediaController(m);
+
+        String path = "android.resource://com.example.tickee/"+R.raw.matbiec;
+        Uri u = Uri.parse(path);
+
+        vid.setVideoURI(u);
         return view;
     }
 

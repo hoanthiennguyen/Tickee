@@ -16,7 +16,7 @@
          />
     <TextView
         android:id="@+id/filmTitle"
-        android:layout_below="@+id/trailerFilm"
+        android:layout_below="@id/trailerFilm"
         android:layout_marginLeft="10dp"
         android:text="Mắt biếc"
         android:textColor="@color/CNS"
