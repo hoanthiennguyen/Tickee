@@ -15,8 +15,32 @@
 
          />
     <TextView
+        android:id="@+id/filmTitle"
         android:layout_below="@id/trailerFilm"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Mắt biếc"
+        android:textColor="@color/CNS"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/filmInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trailerFilm"
+        android:layout_alignBottom="@id/filmTitle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="-2dp"
+        android:layout_toRightOf="@id/filmTitle"
+        android:gravity="center_vertical"
+        android:text=" 120 phút" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/filmTitle"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:text="@string/mat_biec_description"
         android:layout_height="wrap_content" />
