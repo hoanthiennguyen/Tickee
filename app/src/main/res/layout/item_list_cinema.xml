@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:padding="16dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:id="@+id/button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_keyboard_arrow_up_black_24dp"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button"
+        android:id="@+id/list_cinenma_name"
+        android:text="BHD"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"></TextView>
+
+    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+        android:id="@+id/expan_list_cinema"
+        android:layout_below="@id/list_cinenma_name"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="bounce"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/button"
+            android:id="@+id/item_list_cinema_name"
+            android:text="BHD"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/button"
+            android:id="@+id/item_list_cinema_location"
+            android:text="BHD"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/button"
+            android:id="@+id/item_list_cinema_distance"
+            android:text="BHD"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"></TextView>
+    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+</RelativeLayout>
