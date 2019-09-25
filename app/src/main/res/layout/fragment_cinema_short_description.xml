@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    tools:context=".CinemaShortDescriptionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/txtCinema"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CNS" />
+
+    <TextView
+
+        android:id="@+id/txtStreet"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/txtCinema"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Hai Ba Trung" />
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:id="@+id/txtDistance"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:text="1.0 km" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+</RelativeLayout>

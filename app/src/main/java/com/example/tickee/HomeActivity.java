@@ -2,6 +2,8 @@ package com.example.tickee;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
@@ -20,27 +22,28 @@ public class    HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         initView();
         BottomNavigationView bottomNavigationView = findViewById(R.id.navigationBar);
-        bottomNavigationView.setSelectedItemId(R.id.nav_home);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                Intent intent = null;
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                Fragment fragment = null;
                 switch (menuItem.getItemId()) {
                     case R.id.nav_news:
-                        intent = new Intent(HomeActivity.this, NewsActivity.class);
+                        fragment = new NewsFragment();
                         break;
                     case R.id.nav_cinema:
-                        intent = new Intent(HomeActivity.this, CinemaActivity.class);
+                        fragment = new CinemaFragment();
                         break;
                     case R.id.nav_home:
-                        intent = new Intent(HomeActivity.this, HomeActivity.class);
+                        fragment = new HomeFragment();
                         break;
                     case R.id.nav_account:
-                        intent = new Intent(HomeActivity.this, AccountActivity.class);
+                        fragment = new AccountFragment();
                         break;
 
                 }
-                startActivity(intent);
+                transaction.replace(R.id.fragmentContainer, fragment);
+                transaction.commit();
                 return true;
             }
         });
