@@ -40,33 +40,10 @@
             </LinearLayout>
         </HorizontalScrollView>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/filmContainer"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Phim Dang Chieu"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/faf"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:paddingTop="5dp"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/download"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:paddingTop="5dp"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/mantera"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:paddingTop="5dp"/>
+                android:orientation="vertical"></LinearLayout>
         </LinearLayout>
     </ScrollView>

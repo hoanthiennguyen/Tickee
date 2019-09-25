@@ -9,18 +9,16 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.TabHost;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 
 public class    HomeActivity extends AppCompatActivity {
-    private ViewPager viewPager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        initView();
         BottomNavigationView bottomNavigationView = findViewById(R.id.navigationBar);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -48,12 +46,9 @@ public class    HomeActivity extends AppCompatActivity {
             }
         });
     }
-
-    private void initView() {
-        viewPager = findViewById(R.id.homeVP);
-        viewPager.setAdapter(new HomeAdapter(getSupportFragmentManager()));
-        TabLayout tabLayout = findViewById(R.id.homeTab);
-        tabLayout.setupWithViewPager(viewPager);
+    public void onClickFilm(View view){
+        Intent intent = new Intent(this, FilmScheduleActivity.class);
+        startActivity(intent);
     }
 
 }
