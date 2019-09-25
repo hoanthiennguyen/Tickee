@@ -23,7 +23,6 @@ public class CinemaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cinema);
         BottomNavigationView bottomNavigationView = findViewById(R.id.navigationBar);
         bottomNavigationView.setSelectedItemId(R.id.nav_cinema);
-        addBottomNavigationListener(bottomNavigationView);
 
         tabLayout = (TabLayout) findViewById(R.id.tablayout_id);
         viewPager = (ViewPager) findViewById(R.id.viewpager_id);
@@ -39,30 +38,5 @@ public class CinemaActivity extends AppCompatActivity {
 
     }
 
-    private void addBottomNavigationListener(BottomNavigationView bottomNavigationView) {
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                Intent intent = null;
-                switch (menuItem.getItemId()) {
-                    case R.id.nav_news:
-                        intent = new Intent(CinemaActivity.this, NewsActivity.class);
-                        break;
-                    case R.id.nav_cinema:
-                        intent = new Intent(CinemaActivity.this, CinemaActivity.class);
-                        break;
-                    case R.id.nav_home:
-                        intent = new Intent(CinemaActivity.this, HomeActivity.class);
-                        break;
-                    case R.id.nav_account:
-                        intent = new Intent(CinemaActivity.this, AccountActivity.class);
-                        break;
-
-                }
-                startActivity(intent);
-                return true;
-            }
-        });
-    }
 
 }

@@ -35,6 +35,8 @@ public class ListCinema extends Fragment {
                              Bundle savedInstanceState) {
         v = inflater.inflate(R.layout.fragment_list_cinema, container, false);
         myRecyclerView = (RecyclerView) v.findViewById(R.id.list_cinema_recycle);
+        RecycleViewAdapter recycleViewAdapter = new RecycleViewAdapter(getContext(), cinema);
+        myRecyclerView.setAdapter(recycleViewAdapter);
         myRecyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         myRecyclerView.setLayoutManager(layoutManager);

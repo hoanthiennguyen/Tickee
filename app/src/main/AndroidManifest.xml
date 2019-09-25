@@ -10,17 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".FilmScheduleActivity">
+
+        </activity>
+        <activity android:name=".CinemaActivity" />
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".AccountActivity" />
-        <activity android:name=".NewsActivity" />
-        <activity android:name=".CinemaActivity" />
-        <activity android:name=".HomeActivity">
-
         </activity>
         <activity android:name=".MainActivity" />
     </application>
