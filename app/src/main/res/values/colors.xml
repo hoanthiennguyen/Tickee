@@ -7,5 +7,7 @@
     <color name="BHD">#50CE55</color>
     <color name="CNS">#DB4179</color>
     <color name="Lotte">#F44336</color>
+    <color name="selectedItemColor">#F44336</color>
     <color name="MegaGS">#FFC107</color>
+    <color name="navigationBackground">#555555</color>
 </resources>

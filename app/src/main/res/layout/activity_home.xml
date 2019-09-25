@@ -20,6 +20,5 @@
         android:layout_width="match_parent"
         android:id="@+id/navigationBar"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
         app:menu="@menu/nav_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
 </RelativeLayout>
