@@ -4,15 +4,17 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.tabs.TabLayout;
 
-public class HomeActivity extends AppCompatActivity {
-
+public class    HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +45,10 @@ public class HomeActivity extends AppCompatActivity {
                 return true;
             }
         });
+    }
+    public void onClickFilm(View view){
+        Intent intent = new Intent(this, FilmScheduleActivity.class);
+        startActivity(intent);
     }
 
 }
