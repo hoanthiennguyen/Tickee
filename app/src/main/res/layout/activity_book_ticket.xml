@@ -494,7 +494,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="160.000 đ"
+                android:text="0.000 đ"
                 android:textSize="25dp" />
         </LinearLayout>
 

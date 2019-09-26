@@ -91,7 +91,7 @@ public class BookTicketActivity extends AppCompatActivity {
         int totalVip = Integer.parseInt(ticketVip.getText().toString()) * priceVip;
         int totalCoup = Integer.parseInt(ticketCoup.getText().toString()) * priceCouple;
         int sum = totalCoup + totalNor + totalVip;
-        String total = sum + ".000";
+        String total = sum + ".000 đ";
         return total;
     }
 }
