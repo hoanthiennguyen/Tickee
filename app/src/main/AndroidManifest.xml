@@ -10,8 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/MyTheme">
         <activity android:name=".BookTicketActivity"></activity>
-        <activity android:name=".FilmScheduleActivity"></activity>
-        <activity android:name=".CinemaActivity" />
+        <activity android:name=".filmschedule.FilmScheduleActivity"></activity>
         <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
