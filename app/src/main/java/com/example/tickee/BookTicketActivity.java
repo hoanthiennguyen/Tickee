@@ -7,11 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class BookTicketActivity extends AppCompatActivity {
-    ImageButton btnImg;
-    Button continueBtn;
+    ImageButton addNormal;
+    ImageButton addVip;
+    ImageButton addCouple;
+    ImageButton removeNormal;
+    ImageButton removeVip;
+    ImageButton removeCouple;
     TextView ticketNor;
     TextView ticketVip;
     TextView ticketCoup;
@@ -25,40 +30,44 @@ public class BookTicketActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_ticket);
+
+
         //Ticket Normal
         ticketNor = (TextView) findViewById(R.id.txtTicketNormal);
-        btnImg = (ImageButton) findViewById(R.id.buttonAddNormal);
-        btnImg.setOnClickListener(new View.OnClickListener(){
+        addNormal = (ImageButton) findViewById(R.id.buttonAddNormal);
+        addNormal.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                ImageButton btnRemoveNormal = (ImageButton) findViewById(R.id.buttonRemoveNormal);
-                btnRemoveNormal.setImageDrawable(getDrawable(R.drawable.ic_remove_black_24dp));
+                removeNormal.setImageDrawable(getDrawable(R.drawable.ic_remove_black_24dp));
+                removeNormal.setEnabled(true);
                 int current =  Integer.parseInt(ticketNor.getText().toString());
                 if(current < 10){
                     current = current + 1;
                     ticketNor.setText(String.valueOf(current));
                     TextView priceTotal = (TextView) findViewById(R.id.priceTotal);
                     priceTotal.setText(totalMoney());
-                }else{
-                    btnImg.setEnabled(false);
-                    btnRemoveNormal.setEnabled(true);
+                }
+                if(current == 10){
+                    addNormal.setEnabled(false);
+                    addNormal.setImageDrawable(getDrawable(R.drawable.ic_add_circle_diable_24dp));
                 }
             }
         });
-        btnImg = (ImageButton) findViewById(R.id.buttonRemoveNormal);
-        btnImg.setOnClickListener(new View.OnClickListener(){
+
+        //Remove Normal
+        removeNormal = (ImageButton) findViewById(R.id.buttonRemoveNormal);
+        removeNormal.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                ImageButton btnAddNormal = (ImageButton) findViewById(R.id.buttonAddNormal);
-                btnAddNormal.setEnabled(true);
+                addNormal.setEnabled(true);
                 int current =  Integer.parseInt(ticketNor.getText().toString());
                 if(current != 0){
+                    addNormal.setImageDrawable(getDrawable(R.drawable.ic_add_circle_black_24dp));
                     current = current - 1;
                     ticketNor.setText(String.valueOf(current));
-                }else{
-                    ImageButton btnRemoveNormal = (ImageButton) findViewById(R.id.buttonRemoveNormal);
-                    btnRemoveNormal.setImageDrawable(getDrawable(R.drawable.ic_remove_transparent_24dp));
-                    btnImg.setEnabled(false);
+                }if(current == 0) {
+                    removeNormal.setImageDrawable(getDrawable(R.drawable.ic_remove_transparent_24dp));
+                    removeNormal.setEnabled(false);
                 }
                 TextView priceTotal = (TextView) findViewById(R.id.priceTotal);
                 priceTotal.setText(totalMoney());
@@ -68,39 +77,42 @@ public class BookTicketActivity extends AppCompatActivity {
 
         //Ticket Vip
         ticketVip = (TextView) findViewById(R.id.txtTicketVip);
-        btnImg = (ImageButton) findViewById(R.id.buttonAddVip);
-        btnImg.setOnClickListener(new View.OnClickListener(){
+        addVip = (ImageButton) findViewById(R.id.buttonAddVip);
+        addVip.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                ImageButton btnRemoveVip = (ImageButton) findViewById(R.id.buttonRemoveVip);
-                btnRemoveVip.setImageDrawable(getDrawable(R.drawable.ic_remove_black_24dp));
+                removeVip.setEnabled(true);
+                removeVip.setImageDrawable(getDrawable(R.drawable.ic_remove_black_24dp));
                 int current =  Integer.parseInt(ticketVip.getText().toString());
                 if(current < 10){
                     current = current + 1;
                     ticketVip.setText(String.valueOf(current));
                     TextView priceTotal = (TextView) findViewById(R.id.priceTotal);
                     priceTotal.setText(totalMoney());
-                }else{
-                    btnImg.setEnabled(false);
-                    btnRemoveVip.setEnabled(true);
-
+                }
+                if(current == 10){
+                    addVip.setEnabled(false);
+                    addVip.setImageDrawable(getDrawable(R.drawable.ic_add_circle_diable_24dp));
                 }
             }
         });
-        btnImg = (ImageButton) findViewById(R.id.buttonRemoveVip);
-        btnImg.setOnClickListener(new View.OnClickListener(){
+
+
+        //Remove Vip
+        removeVip = (ImageButton) findViewById(R.id.buttonRemoveVip);
+        removeVip.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                ImageButton btnAddVip = (ImageButton) findViewById(R.id.buttonAddVip);
-                btnAddVip.setEnabled(true);
+                addVip.setEnabled(true);
                 int current =  Integer.parseInt(ticketVip.getText().toString());
                 if(current != 0){
+                    addVip.setImageDrawable(getDrawable(R.drawable.ic_add_circle_black_24dp));
                     current = current - 1;
                     ticketVip.setText(String.valueOf(current));
-                }else{
+                }if(current == 0){
                     ImageButton btnRemoveVip = (ImageButton) findViewById(R.id.buttonRemoveVip);
                     btnRemoveVip.setImageDrawable(getDrawable(R.drawable.ic_remove_transparent_24dp));
-                    btnImg.setEnabled(false);
+                    removeVip.setEnabled(false);
                 }
                 TextView priceTotal = (TextView) findViewById(R.id.priceTotal);
                 priceTotal.setText(totalMoney());
@@ -109,39 +121,42 @@ public class BookTicketActivity extends AppCompatActivity {
 
         //Ticket Couple
         ticketCoup = (TextView) findViewById(R.id.txtTicketCouple);
-        btnImg = (ImageButton) findViewById(R.id.buttonAddCouple);
-        btnImg.setOnClickListener(new View.OnClickListener(){
+        addCouple = (ImageButton) findViewById(R.id.buttonAddCouple);
+        addCouple.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                ImageButton btnRemoveCouple = (ImageButton) findViewById(R.id.buttonRemoveCouple);
-                btnRemoveCouple.setImageDrawable(getDrawable(R.drawable.ic_remove_black_24dp));
-                btnRemoveCouple.setEnabled(true);
+                removeCouple.setImageDrawable(getDrawable(R.drawable.ic_remove_black_24dp));
+                removeCouple.setEnabled(true);
                 int current =  Integer.parseInt(ticketCoup.getText().toString());
                 if(current < 10){
                     current = current + 1;
                     ticketCoup.setText(String.valueOf(current));
                     TextView priceTotal = (TextView) findViewById(R.id.priceTotal);
                     priceTotal.setText(totalMoney());
-                }else{
-                    btnImg.setEnabled(false);
-                    btnRemoveCouple.setEnabled(true);
+                }
+                if(current == 10){
+                    addCouple.setEnabled(false);
+                    addCouple.setImageDrawable(getDrawable(R.drawable.ic_add_circle_diable_24dp));
                 }
             }
         });
-        btnImg = (ImageButton) findViewById(R.id.buttonRemoveCouple);
-        btnImg.setOnClickListener(new View.OnClickListener(){
+
+
+        //Remove Couple
+        removeCouple = (ImageButton) findViewById(R.id.buttonRemoveCouple);
+        removeCouple.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                ImageButton btnAddCoup = (ImageButton) findViewById(R.id.buttonAddCouple);
-                btnAddCoup.setEnabled(true);
+                addCouple.setEnabled(true);
                 int current =  Integer.parseInt(ticketCoup.getText().toString());
                 if(current != 0){
+                    addCouple.setImageDrawable(getDrawable(R.drawable.ic_add_circle_black_24dp));
                     current = current - 1;
                     ticketCoup.setText(String.valueOf(current));
-                }else{
+                }if(current == 0){
                     ImageButton btnRemoveCoup = (ImageButton) findViewById(R.id.buttonRemoveCouple);
                     btnRemoveCoup.setImageDrawable(getDrawable(R.drawable.ic_remove_transparent_24dp));
-                    btnImg.setEnabled(false);
+                    removeCouple.setEnabled(false);
                 }
                 TextView priceTotal = (TextView) findViewById(R.id.priceTotal);
                 priceTotal.setText(totalMoney());
@@ -150,8 +165,8 @@ public class BookTicketActivity extends AppCompatActivity {
     }
 
 
-
     public String totalMoney(){
+        LinearLayout continueLayout = (LinearLayout) findViewById(R.id.continueLayout);
         ticketNor = findViewById(R.id.txtTicketNormal);
         ticketVip = findViewById(R.id.txtTicketVip);
         ticketCoup = findViewById(R.id.txtTicketCouple);
@@ -159,7 +174,16 @@ public class BookTicketActivity extends AppCompatActivity {
         totalVip = Integer.parseInt(ticketVip.getText().toString()) * priceVip;
         totalCoup = Integer.parseInt(ticketCoup.getText().toString()) * priceCouple;
         int sum = totalCoup + totalNor + totalVip;
-        String total = String.valueOf(sum) + ".000 đ";
+        String total = sum + ".000 đ";
+        if (total.length() == 10){
+            String arr[] = total.split("");
+            total = arr[1] + "." + arr[2]+ arr[3]+ arr[4] + ".000 đ";
+        }
+        if(total.equals("0.000 đ")){
+            continueLayout.setBackground(getDrawable(R.color.gray));
+        }else{
+            continueLayout.setBackground(getDrawable(R.color.BHD));
+        }
         return total;
     }
 
