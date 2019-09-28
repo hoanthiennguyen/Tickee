@@ -1,19 +1,16 @@
-package com.example.tickee;
+package com.example.tickee.filmschedule;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Context;
-import android.net.Uri;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.MediaController;
-import android.widget.Toast;
 import android.widget.VideoView;
 
+import com.example.tickee.BookTicketActivity;
+import com.example.tickee.R;
 import com.google.android.material.tabs.TabLayout;
 
 public class FilmScheduleActivity extends AppCompatActivity {
@@ -57,18 +54,14 @@ public class FilmScheduleActivity extends AppCompatActivity {
     }
 
 
-//        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-//        CinemaShortDescriptionFragment fragment = new CinemaShortDescriptionFragment("BHD","Hai Bà Trưng", "0.5 km");
-//        CinemaShortDescriptionFragment fragment2 = new CinemaShortDescriptionFragment("Lotte","Trần Hưng Đạo", "1 km");
-//        CinemaShortDescriptionFragment fragment3 = new CinemaShortDescriptionFragment("CNS","Lê Lợi", "2 km");
-//        CinemaShortDescriptionFragment fragment4 = new CinemaShortDescriptionFragment("MegaGS","Cống Quỳnh", "2.3 km");
-//        CinemaShortDescriptionFragment fragment5 = new CinemaShortDescriptionFragment("Lotte","Hùng Vương", "2.5 km");
-//        transaction.add(R.id.cinemaContainer,fragment);
-//        transaction.add(R.id.cinemaContainer,fragment2);
-//        transaction.add(R.id.cinemaContainer,fragment3);
-//        transaction.add(R.id.cinemaContainer,fragment4);
-//        transaction.add(R.id.cinemaContainer,fragment5);
-//        transaction.commit();
+
+    public void onClickFilmTime(View view){
+        Intent intent = new Intent(this, BookTicketActivity.class);
+        startActivity(intent);
+    }
+
+
+
 
 
 

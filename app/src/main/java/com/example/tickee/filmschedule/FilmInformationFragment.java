@@ -1,4 +1,4 @@
-package com.example.tickee;
+package com.example.tickee.filmschedule;
 
 
 import android.net.Uri;
@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.MediaController;
 import android.widget.VideoView;
+
+import com.example.tickee.R;
 
 
 /**
