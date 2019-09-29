@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,8 +11,8 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.example.tickee.filmschedule.FilmScheduleActivity;
+import com.example.tickee.home.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.tabs.TabLayout;
 
 public class    HomeActivity extends AppCompatActivity {
     @Override
@@ -53,6 +52,9 @@ public class    HomeActivity extends AppCompatActivity {
     }
     public void onClickFilm(View view){
         Intent intent = new Intent(this, FilmScheduleActivity.class);
+        startActivity(intent);
+    }public void onClickStoppedPlayFilm(View view){
+        Intent intent = new Intent(this, ClickOnDCFilmActivity.class);
         startActivity(intent);
     }
 

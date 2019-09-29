@@ -3,16 +3,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FilmFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.FilmDCFragment"
     android:onClick="onClickFilm"
-    android:layout_marginTop="10dp">
+    android:layout_marginTop="20dp">
 
     <!-- TODO: Update blank fragment layout -->
 
-    <TextView
-        android:layout_gravity="bottom|right"
-        android:background="@color/selectedItemColor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Đặt Vé"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="5dp"
+        android:elevation="10dp">
+        <ImageView
+            android:id="@+id/roundedImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/faf"
+            android:background="@color/colorPrimary"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:background="@drawable/gradient_dark_bg"
+            android:text="Fast and Furious"
+            android:textSize="30dp"
+            android:gravity="center_vertical"
+            android:layout_height="70dp" />
+        <TextView
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/red_rounded_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đặt Vé"/>
+    </androidx.cardview.widget.CardView>
+
 </FrameLayout>

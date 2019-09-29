@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <ScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,24 +19,73 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="330dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="5dp"
+                    android:elevation="10dp">
+                    <ImageView
+                        android:id="@+id/roundedImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/zalo"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="centerCrop"
+                        />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/faf"
-                    android:layout_weight="1"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="330dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="5dp"
+                    android:elevation="10dp">
+                    <ImageView
+                        android:id="@+id/roundedImageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/momo"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="centerCrop"
+                        />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/download"
-                    android:layout_weight="1"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="330dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="5dp"
+                    android:elevation="10dp">
+                    <ImageView
+                        android:id="@+id/roundedImageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/bhd_km"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="centerCrop"
+                        />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/mantera"
-                    android:layout_weight="1"/>
+                </androidx.cardview.widget.CardView>
+
+
+                <!--<ImageView-->
+                    <!--android:layout_width="350dp"-->
+                    <!--android:layout_height="140dp"-->
+                    <!--android:src="@drawable/momo"-->
+                    <!--android:layout_weight="1"/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="350dp"-->
+                    <!--android:layout_height="140dp"-->
+                    <!--android:src="@drawable/bhd_km"-->
+                    <!--android:layout_weight="1"/>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="350dp"-->
+                    <!--android:layout_height="140dp"-->
+                    <!--android:src="@drawable/zalo"-->
+                    <!--android:layout_weight="1"/>-->
             </LinearLayout>
         </HorizontalScrollView>
 
