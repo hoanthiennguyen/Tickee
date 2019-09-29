@@ -21,8 +21,8 @@ public class CinemaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cinema);
-        BottomNavigationView bottomNavigationView = findViewById(R.id.navigationBar);
-        bottomNavigationView.setSelectedItemId(R.id.nav_cinema);
+
+
 
         tabLayout = (TabLayout) findViewById(R.id.tablayout_id);
         viewPager = (ViewPager) findViewById(R.id.viewpager_id);

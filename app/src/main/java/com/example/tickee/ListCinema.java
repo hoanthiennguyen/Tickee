@@ -35,8 +35,9 @@ public class ListCinema extends Fragment {
                              Bundle savedInstanceState) {
         v = inflater.inflate(R.layout.fragment_list_cinema, container, false);
         myRecyclerView = (RecyclerView) v.findViewById(R.id.list_cinema_recycle);
-        RecycleViewAdapter recycleViewAdapter = new RecycleViewAdapter(getContext(), cinema);
-        myRecyclerView.setAdapter(recycleViewAdapter);
+
+        ListCinemaRecycleViewAdapter listRecycleViewAdapter = new ListCinemaRecycleViewAdapter(getContext(), listCinema);
+        myRecyclerView.setAdapter(listRecycleViewAdapter);
         myRecyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         myRecyclerView.setLayoutManager(layoutManager);
@@ -54,11 +55,15 @@ public class ListCinema extends Fragment {
         listCinema.add(new ListCinemaModel("CNS Cinema",R.drawable.cns,true));
 
         cinema = new ArrayList<>();
+        cinema.add(new CinemaModel("BHD Thao Dien", "304 Quang Trung", "6 km"));
+        cinema.add(new CinemaModel("BHD Quang Trung", "231 Quang Trung", "5.6 km"));
+        cinema.add(new CinemaModel("BHD 3 Thang 2", "9 Truong Son", "0.8 km"));
         for(int m = 0; m<listCinema.size();m++){
             if(listCinema.get(m).getName() == "BHD Cinema"){
-                cinema.add(new CinemaModel("BHD Thao Dien", "304 Quang Trung", "6 km"));
-                cinema.add(new CinemaModel("BHD Quang Trung", "231 Quang Trung", "5.6 km"));
-                cinema.add(new CinemaModel("BHD 3 Thang 2", "9 Truong Son", "0.8 km"));
+
+                if(cinema.get(m).getCinemaName().contains("BHD")){
+                    listCinema.get(m).setDetails(cinema);
+                }
             }
         }
     }

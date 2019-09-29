@@ -3,9 +3,18 @@ package com.example.tickee;
 import java.util.List;
 
 public class ListCinemaModel {
+    private List<CinemaModel> details;
     private String name;
     private int img;
     private boolean isExpan;
+
+    public List<CinemaModel> getDetails() {
+        return details;
+    }
+
+    public void setDetails(List<CinemaModel> details) {
+        this.details = details;
+    }
 
     public ListCinemaModel(String name) {
         this.name = name;
