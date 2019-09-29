@@ -3,16 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FilmFragment"
-    android:onClick="onClickFilm"
+    tools:context=".FilmSCFragment"
     android:layout_marginTop="10dp">
 
     <!-- TODO: Update blank fragment layout -->
-
     <TextView
-        android:layout_gravity="bottom|right"
+        android:layout_gravity="top|right"
         android:background="@color/selectedItemColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Đặt Vé"/>
+        android:text="30/09"/>
+
 </FrameLayout>
