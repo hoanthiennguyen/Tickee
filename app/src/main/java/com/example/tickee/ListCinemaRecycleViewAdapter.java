@@ -1,6 +1,7 @@
 package com.example.tickee;
 
 import android.animation.ObjectAnimator;
+import android.content.ContentValues;
 import android.content.Context;
 import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
@@ -30,9 +31,9 @@ public class ListCinemaRecycleViewAdapter extends RecyclerView.Adapter<RecyclerV
     Context context;
     SparseBooleanArray expanState = new SparseBooleanArray();
 
-    public ListCinemaRecycleViewAdapter(List<ListCinemaModel> listCinema, List<CinemaModel> cinema) {
+    public ListCinemaRecycleViewAdapter(Context context, List<ListCinemaModel> listCinema) {
         this.listCinema = listCinema;
-        this.cinema = cinema;
+
         for(int i=0; i<listCinema.size();i++){
             expanState.append(i, false);
         }
@@ -90,9 +91,9 @@ public class ListCinemaRecycleViewAdapter extends RecyclerView.Adapter<RecyclerV
                 viewHolder.expandableLayout.toggle();
             }
         });
-        viewHolder.item_list_cinema_name.setText(cinema.get(position).getCinemaName());
-        viewHolder.item_list_cinema_location.setText(cinema.get(position).getCinemaLocation());
-        viewHolder.item_list_cinema_distance.setText(cinema.get(position).getCinemaDistance());
+        viewHolder.item_list_cinema_name.setText(listCinema.get(position).getName());
+        viewHolder.item_list_cinema_location.setText(listCinema.get(position).getName());
+        viewHolder.item_list_cinema_distance.setText(listCinema.get(position).getName());
 
     }
 
@@ -124,6 +125,7 @@ class MyAdapter extends RecyclerView.ViewHolder{
         item_list_cinema_name = (TextView) itemView.findViewById(R.id.item_list_cinema_name);
         item_list_cinema_location = (TextView) itemView.findViewById(R.id.item_list_cinema_location);
         item_list_cinema_distance = (TextView) itemView.findViewById(R.id.item_list_cinema_distance);
+        img = (ImageView) itemView.findViewById(R.id.img_list_cinema);
         button = (RelativeLayout)itemView.findViewById(R.id.button);
         expandableLayout = (ExpandableLinearLayout)itemView.findViewById(R.id.expan_list_cinema);
     }

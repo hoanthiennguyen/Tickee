@@ -35,6 +35,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        System.out.println("Tuong position " + position);
         holder.tv_name.setText(data.get(position).getCinemaName());
         holder.tv_location.setText(data.get(position).getCinemaLocation());
         holder.tv_distance.setText(data.get(position).getCinemaDistance());
