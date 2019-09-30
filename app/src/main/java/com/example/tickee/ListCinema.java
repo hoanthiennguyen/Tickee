@@ -52,19 +52,16 @@ public class ListCinema extends Fragment {
         listCinema.add(new ListCinemaModel("BHD Cinema",R.drawable.bhd,true));
         listCinema.add(new ListCinemaModel("CGV Cinema",R.drawable.cgv,true));
         listCinema.add(new ListCinemaModel("Galaxy Cinema",R.drawable.galaxy,true));
-        listCinema.add(new ListCinemaModel("CNS Cinema",R.drawable.cns,true));
+//        listCinema.add(new ListCinemaModel("CNS Cinema",R.drawable.cns,true));
 
-        cinema = new ArrayList<>();
-        cinema.add(new CinemaModel("BHD Thao Dien", "304 Quang Trung", "6 km"));
-        cinema.add(new CinemaModel("BHD Quang Trung", "231 Quang Trung", "5.6 km"));
-        cinema.add(new CinemaModel("BHD 3 Thang 2", "9 Truong Son", "0.8 km"));
-        for(int m = 0; m<listCinema.size();m++){
-            if(listCinema.get(m).getName() == "BHD Cinema"){
-
-                if(cinema.get(m).getCinemaName().contains("BHD")){
-                    listCinema.get(m).setDetails(cinema);
-                }
-            }
-        }
+        List<CinemaModel> cinema = new ArrayList<>();
+        List<CinemaModel> cinema1 = new ArrayList<>();
+        List<CinemaModel> cinema2 = new ArrayList<>();
+        cinema.add(new CinemaModel("BHD Thao Dien", "18 Thao Dien", "6 km"));
+        cinema1.add(new CinemaModel("CGV Go Vap", "192 Phan Van Tri", "5.6 km"));
+        cinema2.add(new CinemaModel("Galaxy Quang Trung", "231 Quang Trung", "0.8 km"));
+        listCinema.get(0).setDetails(cinema);
+        listCinema.get(1).setDetails(cinema1);
+        listCinema.get(2).setDetails(cinema2);
     }
 }

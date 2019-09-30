@@ -91,9 +91,9 @@ public class ListCinemaRecycleViewAdapter extends RecyclerView.Adapter<RecyclerV
                 viewHolder.expandableLayout.toggle();
             }
         });
-        viewHolder.item_list_cinema_name.setText(listCinema.get(position).getName());
-        viewHolder.item_list_cinema_location.setText(listCinema.get(position).getName());
-        viewHolder.item_list_cinema_distance.setText(listCinema.get(position).getName());
+        viewHolder.item_list_cinema_name.setText(listCinema.get(position).getDetails().get(0).getCinemaName());
+        viewHolder.item_list_cinema_location.setText(listCinema.get(position).getDetails().get(0).getCinemaLocation());
+        viewHolder.item_list_cinema_distance.setText(listCinema.get(position).getDetails().get(0).getCinemaDistance());
 
     }
 
