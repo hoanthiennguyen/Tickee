@@ -5,7 +5,7 @@
     android:layout_height="200dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".home.FilmDCFragment"
-    android:onClick="onClickFilm"
+    android:onClick="onClickSCFilm"
     android:layout_marginTop="20dp">
 
     <!-- TODO: Update blank fragment layout -->
@@ -26,7 +26,7 @@
             android:scaleType="centerCrop"
             />
         <TextView
-            android:layout_gravity="bottom|right"
+            android:layout_gravity="top|right"
             android:layout_marginRight="10dp"
             android:textSize="20dp"
             android:paddingHorizontal="10dp"

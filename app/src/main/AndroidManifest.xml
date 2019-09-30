@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyTheme">
-        <activity android:name=".ClickOnDCFilmActivity"></activity>
+        <activity android:name=".ClickOnSCFilmActivity"></activity>
+        <activity android:name=".ClickOnDCFilmActivity" />
         <activity android:name=".BookTicketActivity" />
         <activity android:name=".filmschedule.FilmScheduleActivity" />
         <activity android:name=".HomeActivity">
