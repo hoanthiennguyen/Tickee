@@ -18,8 +18,8 @@
         android:id="@+id/filmTitle"
         android:layout_below="@id/trailerFilm"
         android:layout_marginLeft="10dp"
-        android:text="Mắt biếc"
-        android:textColor="@color/CNS"
+        android:text="Hoa vàng cỏ xanh"
+        android:textColor="@color/MegaGS"
         android:textSize="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -36,14 +36,19 @@
         android:layout_toRightOf="@id/filmTitle"
         android:gravity="center_vertical"
         android:text=" 120 phút" />
-
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/filmTitle"
+        android:layout_width="wrap_content"
+        android:text="114 người quan tâm"
+        android:layout_height="wrap_content" />
     <TextView
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_below="@id/filmTitle"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:text="@string/mat_biec_description"
+        android:text="@string/hoavangcoxanh"
         android:layout_height="wrap_content" />
 
 </RelativeLayout>

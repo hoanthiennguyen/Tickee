@@ -102,7 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="Saekano Final 2020 Spring"
+                android:text="Mắt biếc"
                 android:textSize="25dp" />
 
             <TextView
@@ -121,7 +121,7 @@
             android:layout_height="200dp"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/visual01" />
+            app:srcCompat="@drawable/matbiecimg" />
     </LinearLayout>
 
     <LinearLayout

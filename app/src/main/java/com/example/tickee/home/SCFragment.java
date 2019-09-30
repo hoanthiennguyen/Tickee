@@ -19,8 +19,11 @@ public class SCFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.sapchieu, container, false);
         FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-        transaction.add(R.id.filmSCContainer,new FilmSCFragment(R.drawable.faf));
-        transaction.add(R.id.filmSCContainer,new FilmSCFragment(R.drawable.download));
+        for (Fragment fragment : getChildFragmentManager().getFragments()) {
+            transaction.remove(fragment);
+        }
+        transaction.add(R.id.filmSCContainer,new FilmSCFragment(R.drawable.hungthan));
+        transaction.add(R.id.filmSCContainer,new FilmSCFragment(R.drawable.minion));
         transaction.commit();
         return view;
     }

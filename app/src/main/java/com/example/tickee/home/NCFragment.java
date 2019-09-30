@@ -19,9 +19,13 @@ public class NCFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.ngungchieu, container, false);
         FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
+        for (Fragment fragment : getChildFragmentManager().getFragments()) {
+            transaction.remove(fragment);
+        }
         transaction.add(R.id.filmNCContainer,new FilmNCFragment(R.drawable.hoavangcoxanh));
-        transaction.add(R.id.filmNCContainer,new FilmNCFragment(R.drawable.download));
+        transaction.add(R.id.filmNCContainer,new FilmNCFragment(R.drawable.thor2));
         transaction.commit();
         return view;
     }
+
 }

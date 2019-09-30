@@ -18,8 +18,11 @@ public class DCFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.dangchieu, container, false);
         FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-        transaction.add(R.id.filmContainer,new FilmDCFragment(R.drawable.faf));
-        transaction.add(R.id.filmContainer,new FilmDCFragment(R.drawable.download));
+        for (Fragment fragment : getChildFragmentManager().getFragments()) {
+            transaction.remove(fragment);
+        }
+        transaction.add(R.id.filmContainer,new FilmDCFragment(R.drawable.matbiecbg));
+        transaction.add(R.id.filmContainer,new FilmDCFragment(R.drawable.sheep));
         transaction.commit();
         return view;
     }
