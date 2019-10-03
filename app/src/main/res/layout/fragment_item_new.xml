@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ItemNew"
+    android:onClick="onClickNew"
+    android:paddingTop="7dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="7dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/itemImg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sheep"/>
+            <TextView
+                android:id="@+id/itemDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemImg"
+                android:text="10/02/2019"
+                android:textColor="#ffffff"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/itemTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemDate"
+                android:textSize="25sp"
+                android:text="Thanh niên đẩy xe ngựa bị đột quỵ do làm việc quá sức"
+                android:textColor="#ffffff"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:id="@+id/itemDercp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemTitle"
+                android:text="Ngày 09/30/2019, tại trường đại học fpt ngay trong phòng vệ sinh đã xảy ra 1 vụ việc đáng thương tiếc."
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="10dp"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

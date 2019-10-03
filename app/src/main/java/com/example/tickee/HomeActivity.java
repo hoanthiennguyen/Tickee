@@ -64,6 +64,9 @@ public class    HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ClickOnSCFilmActivity.class);
         startActivity(intent);
     }
-
+    public void onClickNew(View view) {
+        Intent intent = new Intent(this, ClickOnNewActivity.class);
+        startActivity(intent);
+    }
 
 }
