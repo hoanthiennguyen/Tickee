@@ -47,7 +47,7 @@
             android:layout_marginLeft="10dp"
             android:gravity="center"
             android:text="CNS"
-            android:textColor="@color/CNS"
+            android:textColor="@color/purple"
             android:textSize="20dp" />
 
         <TextView
@@ -508,7 +508,7 @@
                     android:id="@+id/continueLayout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/BHD"
+                    android:background="@color/green"
                     android:orientation="horizontal">
 
                     <Button

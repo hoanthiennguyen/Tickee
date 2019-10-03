@@ -6,31 +6,27 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
-import com.example.tickee.home.DCFragment;
-import com.example.tickee.home.NCFragment;
-import com.example.tickee.home.SCFragment;
-
 public class HomeAdapter extends FragmentStatePagerAdapter {
-    private String listTab[] = {"Đang Chiếu", "Sắp Chiếu", "Ngưng Chiếu"};
-    private DCFragment dcFragment;
-    private SCFragment scFragment;
-    private NCFragment ncFragment;
+    private String listTab[] = {"Đang Chiếu", "Sắp Chiếu", "Đã Chiếu"};
+    private PlayingFragment playingFragment;
+    private WillPlayFragment willPlayFragment;
+    private PlayedFragment playedFragment;
     public HomeAdapter(@NonNull FragmentManager fm) {
         super(fm);
-        dcFragment = new DCFragment();
-        scFragment = new SCFragment();
-        ncFragment = new NCFragment();
+        playingFragment = new PlayingFragment();
+        willPlayFragment = new WillPlayFragment();
+        playedFragment = new PlayedFragment();
     }
 
     @NonNull
     @Override
     public Fragment getItem(int position) {
         if(position == 0) {
-            return dcFragment;
+            return playingFragment;
         }else if(position == 1) {
-            return scFragment;
+            return willPlayFragment;
         }else if(position == 2){
-            return ncFragment;
+            return playedFragment;
         }else {
             //Do nothing
         }

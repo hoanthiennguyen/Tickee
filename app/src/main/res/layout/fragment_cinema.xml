@@ -9,9 +9,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabMode="fixed"
-        app:tabSelectedTextColor="@color/Lotte"
+        app:tabSelectedTextColor="@color/red"
         app:tabGravity="fill"
-        app:tabIndicatorColor="@color/Lotte"
+        app:tabIndicatorColor="@color/red"
         android:id="@+id/tablayout_id"
         ></com.google.android.material.tabs.TabLayout>
     <androidx.viewpager.widget.ViewPager

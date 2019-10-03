@@ -9,6 +9,9 @@
         android:id="@+id/homeTab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:tabSelectedTextColor="@color/red"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/red"
         app:tabMode="fixed">
 
     </com.google.android.material.tabs.TabLayout>

@@ -17,10 +17,10 @@ import com.example.tickee.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FilmDCInformationFragment extends Fragment {
+public class PlayedFilmInformationFragment extends Fragment {
 
 
-    public FilmDCInformationFragment() {
+    public PlayedFilmInformationFragment() {
         // Required empty public constructor
     }
 

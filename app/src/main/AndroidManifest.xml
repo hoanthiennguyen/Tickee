@@ -11,8 +11,8 @@
         android:theme="@style/MyTheme">
         <activity android:name=".MakePaymentActivity"></activity>
         <activity android:name=".SelectChairActivity" />
-        <activity android:name=".home.ClickOnSCFilmActivity" />
-        <activity android:name=".home.ClickOnDCFilmActivity" />
+        <activity android:name=".home.ClickOnWillPlayFilmActivity" />
+        <activity android:name=".home.ClickOnPlayedFilmActivity" />
         <activity android:name=".BookTicketActivity" />
         <activity android:name=".filmschedule.FilmScheduleActivity" />
         <activity android:name=".ClickOnNewActivity"/>

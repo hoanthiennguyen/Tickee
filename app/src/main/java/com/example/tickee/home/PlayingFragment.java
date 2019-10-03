@@ -12,7 +12,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.tickee.R;
 
-public class DCFragment extends Fragment {
+public class PlayingFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -21,8 +21,8 @@ public class DCFragment extends Fragment {
         for (Fragment fragment : getChildFragmentManager().getFragments()) {
             transaction.remove(fragment);
         }
-        transaction.add(R.id.filmContainer,new FilmDCFragment(R.drawable.matbiecbg));
-        transaction.add(R.id.filmContainer,new FilmDCFragment(R.drawable.sheep));
+        transaction.add(R.id.filmContainer,new PlayingFilmFragment(R.drawable.matbiecbg,"C12",5f));
+        transaction.add(R.id.filmContainer,new PlayingFilmFragment(R.drawable.sheep, null,4.3f));
         transaction.commit();
         return view;
     }
