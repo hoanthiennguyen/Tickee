@@ -1,4 +1,4 @@
-package com.example.tickee;
+package com.example.tickee.cinema;
 
 
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.tickee.R;
+import com.example.tickee.ViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 

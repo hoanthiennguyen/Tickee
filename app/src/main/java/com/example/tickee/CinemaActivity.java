@@ -1,14 +1,12 @@
 package com.example.tickee;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.example.tickee.cinema.ListCinema;
+import com.example.tickee.cinema.NearCinema;
 import com.google.android.material.tabs.TabLayout;
 
 public class CinemaActivity extends AppCompatActivity {

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectChairActivity">
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="?attr/colorButtonNormal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:onClick="onClickExit"
+            android:id="@+id/imageButton"
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/panelBackground"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_close_black_24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cinemaLayout"
+        android:layout_width="334dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtCinemaCNS2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="CNS"
+            android:textColor="@color/CNS"
+            android:textSize="20dp" />
+
+        <TextView
+
+            android:id="@+id/txtStreeCNS"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/txtCinemaCNS2"
+            android:gravity="center"
+            android:text="- Phạm Văn Đồng"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/timeLocationLayout"
+        android:layout_width="334dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:text="Hôm nay - 15:00 - RẠP 1"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/screen"
+        android:layout_below="@id/timeLocationLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="3dp"
+            android:background="@color/lightBlue"/>
+        <TextView
+            android:gravity="center"
+            android:text="Màn hình"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:text="(Phim: Mắt biếc)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/chairs"
+        android:layout_below="@id/screen"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/chair_row"></include>
+        <include layout="@layout/chair_row"></include>
+        <include layout="@layout/chair_row"></include>
+        <include layout="@layout/chair_row_include_selected"></include>
+        <include layout="@layout/chair_row"></include>
+
+
+    </TableLayout>
+    <TableLayout
+        android:layout_below="@id/chairs"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:layout_marginLeft="35dp"
+                android:id="@+id/button5"
+                android:text="X"
+                android:background="@drawable/roundbuttondisable"
+                android:textSize="20dp"
+                android:enabled="false"
+                android:layout_marginRight="3dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+
+
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/roundbuttongray"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+            <Button
+                android:id="@+id/button7"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/roundbuttongreen"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+            <Button
+                android:id="@+id/button8"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/roundbackgroundyellow"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Ghế đã đặt" android:layout_marginLeft="20dp"/>
+            <TextView android:text="Ghế trống" android:layout_marginLeft="20dp"/>
+            <TextView android:text="Ghế đang chọn" android:width="50dp" android:gravity="center" android:layout_marginLeft="20dp"/>
+            <TextView android:text="Ghế VIP" android:layout_marginLeft="20dp" android:gravity="center"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:text="Tiếp tục"
+        android:enabled="false"
+        android:onClick="onClickContinue"
+        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

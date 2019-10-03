@@ -1,7 +1,6 @@
-package com.example.tickee;
+package com.example.tickee.cinema;
 
 import android.animation.ObjectAnimator;
-import android.content.ContentValues;
 import android.content.Context;
 import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
@@ -11,13 +10,10 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.github.aakira.expandablelayout.ExpandableLayout;
-import com.github.aakira.expandablelayout.ExpandableLayoutListener;
+import com.example.tickee.R;
 import com.github.aakira.expandablelayout.ExpandableLayoutListenerAdapter;
 import com.github.aakira.expandablelayout.ExpandableLinearLayout;
 import com.github.aakira.expandablelayout.Utils;
-
-import org.w3c.dom.Text;
 
 import java.util.List;
 

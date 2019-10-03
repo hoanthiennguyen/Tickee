@@ -1,4 +1,4 @@
-package com.example.tickee;
+package com.example.tickee.cinema;
 
 
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.tickee.R;
 
 import java.util.ArrayList;
 import java.util.List;

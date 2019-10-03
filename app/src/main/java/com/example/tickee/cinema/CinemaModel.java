@@ -1,4 +1,4 @@
-package com.example.tickee;
+package com.example.tickee.cinema;
 
 public class CinemaModel {
     private String cinemaName;

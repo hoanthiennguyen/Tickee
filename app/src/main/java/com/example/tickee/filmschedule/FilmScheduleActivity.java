@@ -54,7 +54,9 @@ public class FilmScheduleActivity extends AppCompatActivity {
     }
 
 
-
+    public void onClickExit(View view){
+        finish();
+    }
     public void onClickFilmTime(View view){
         Intent intent = new Intent(this, BookTicketActivity.class);
         startActivity(intent);

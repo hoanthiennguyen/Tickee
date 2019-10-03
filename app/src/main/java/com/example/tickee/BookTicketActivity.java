@@ -2,6 +2,7 @@ package com.example.tickee;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +21,7 @@ public class BookTicketActivity extends AppCompatActivity {
     TextView ticketNor;
     TextView ticketVip;
     TextView ticketCoup;
+    Button btnContinue;
     int priceNormal = 80;
     int priceVip = 85;
     int priceCouple = 180;
@@ -31,7 +33,7 @@ public class BookTicketActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_ticket);
 
-
+        btnContinue = findViewById(R.id.btnContinue);
         //Ticket Normal
         ticketNor = (TextView) findViewById(R.id.txtTicketNormal);
         addNormal = (ImageButton) findViewById(R.id.buttonAddNormal);
@@ -181,10 +183,19 @@ public class BookTicketActivity extends AppCompatActivity {
         }
         if(total.equals("0.000 đ")){
             continueLayout.setBackground(getDrawable(R.color.gray));
+            btnContinue.setEnabled(false);
         }else{
             continueLayout.setBackground(getDrawable(R.color.BHD));
+            btnContinue.setEnabled(true);
         }
         return total;
+    }
+    public void onClickContinue(View view){
+        Intent intent = new Intent(this,SelectChairActivity.class);
+        startActivity(intent);
+    }
+    public void onClickExit(View view){
+        finish();
     }
 
 }

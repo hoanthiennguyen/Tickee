@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ClickOnSCFilmActivity extends AppCompatActivity {
+public class MakePaymentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_click_on_scfilm);
+        setContentView(R.layout.activity_make_payment);
     }
 }

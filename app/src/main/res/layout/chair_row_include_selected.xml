@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/button2"
+        android:onClick="onClickChair"
+        android:layout_weight="1"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/roundbuttongray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:onClick="onClickChair"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/roundbuttongray"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       />
+
+    <Button
+        android:id="@+id/button4"
+        android:text="X"
+        android:textSize="20dp"
+        android:background="@drawable/roundbuttondisable"
+        android:enabled="false"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+    <Button
+        android:id="@+id/button5"
+        android:text="X"
+        android:background="@drawable/roundbuttondisable"
+        android:textSize="20dp"
+        android:enabled="false"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+
+
+    <Button
+        android:id="@+id/button6"
+        android:onClick="onClickChair"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1"
+        android:background="@drawable/roundbuttongray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/button7"
+        android:onClick="onClickChair"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/roundbuttongray"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+    <Button
+        android:id="@+id/button8"
+        android:onClick="onClickChair"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/roundbuttongray"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+    <Button
+        android:id="@+id/button9"
+        android:onClick="onClickChair"
+        android:layout_weight="1"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/roundbuttongray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</TableRow>

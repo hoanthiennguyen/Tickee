@@ -10,7 +10,10 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.tickee.cinema.CinemaFragment;
 import com.example.tickee.filmschedule.FilmScheduleActivity;
+import com.example.tickee.home.ClickOnDCFilmActivity;
+import com.example.tickee.home.ClickOnSCFilmActivity;
 import com.example.tickee.home.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 

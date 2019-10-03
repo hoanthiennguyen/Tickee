@@ -1,4 +1,4 @@
-package com.example.tickee;
+package com.example.tickee.filmschedule;
 
 
 import android.content.Context;
@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.tickee.R;
 
 
 /**

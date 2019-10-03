@@ -1,4 +1,4 @@
-package com.example.tickee;
+package com.example.tickee.home;
 
 
 import android.net.Uri;
@@ -10,6 +10,8 @@ import android.widget.MediaController;
 import android.widget.VideoView;
 
 import androidx.fragment.app.Fragment;
+
+import com.example.tickee.R;
 
 
 /**

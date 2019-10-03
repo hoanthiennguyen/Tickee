@@ -30,7 +30,7 @@
             android:layout_marginRight="10dp"
             android:textSize="20dp"
             android:paddingHorizontal="10dp"
-            android:background="@drawable/yellow_rounded_background"
+            android:background="@drawable/roundbackgroundyellow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Quan tâm"/>
