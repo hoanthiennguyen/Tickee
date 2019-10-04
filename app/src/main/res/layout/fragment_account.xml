@@ -81,9 +81,14 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:text="Xếp hạng thành viên:  Starter" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
 
                 <TextView
                     android:textSize="16dp"
+                    android:layout_marginTop="15dp"
                     android:text="Đăng xuất"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
