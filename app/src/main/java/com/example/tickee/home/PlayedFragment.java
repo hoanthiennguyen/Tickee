@@ -11,9 +11,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.tickee.R;
-import com.example.tickee.home.FilmNCFragment;
 
-public class NCFragment extends Fragment {
+public class PlayedFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -22,8 +21,8 @@ public class NCFragment extends Fragment {
         for (Fragment fragment : getChildFragmentManager().getFragments()) {
             transaction.remove(fragment);
         }
-        transaction.add(R.id.filmNCContainer,new FilmNCFragment(R.drawable.hoavangcoxanh));
-        transaction.add(R.id.filmNCContainer,new FilmNCFragment(R.drawable.thor2));
+        transaction.add(R.id.filmNCContainer,new PlayedFilmFragment(R.drawable.hoavangcoxanh,4.7f));
+        transaction.add(R.id.filmNCContainer,new PlayedFilmFragment(R.drawable.thor2, 4.1f));
         transaction.commit();
         return view;
     }

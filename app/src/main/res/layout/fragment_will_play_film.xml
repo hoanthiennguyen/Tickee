@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="200dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".home.FilmSCFragment"
+    tools:context=".home.WillPlayFilmFragment"
     android:onClick="onClickSCFilm"
     android:layout_marginTop="20dp">
 
@@ -26,7 +26,30 @@
             android:scaleType="centerCrop"
             />
         <TextView
-            android:layout_gravity="top|right"
+            android:text="C16"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/txtAgeRequired"
+            android:background="@drawable/roundbackgroundsmallred"
+            android:paddingHorizontal="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <RatingBar
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:numStars="5"
+            android:rating="3.5"
+            android:progressTint="@color/StarColor"
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txtDateToBeShowed"
+            android:layout_gravity="bottom|right"
             android:layout_marginRight="10dp"
             android:textSize="20dp"
             android:paddingHorizontal="10dp"

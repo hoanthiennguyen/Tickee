@@ -44,7 +44,7 @@
             android:layout_marginLeft="10dp"
             android:gravity="center"
             android:text="CNS"
-            android:textColor="@color/CNS"
+            android:textColor="@color/purple"
             android:textSize="20dp" />
 
         <TextView
@@ -102,9 +102,47 @@
             android:layout_height="wrap_content" />
 
     </LinearLayout>
-
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="20dp"
+        android:id="@+id/characterIndex"
+        android:layout_alignTop="@id/chairs"
+        android:layout_alignBottom="@id/chairs"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="B"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="C"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="D"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="E"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
     <TableLayout
         android:id="@+id/chairs"
+        android:layout_toRightOf="@id/characterIndex"
         android:layout_below="@id/screen"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
@@ -118,56 +156,166 @@
 
 
     </TableLayout>
-    <TableLayout
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignLeft="@id/chairs"
+        android:layout_alignRight="@id/chairs"
         android:layout_below="@id/chairs"
-        android:layout_marginTop="30dp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-        <TableRow>
+        <TextView
+            android:text="1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="2"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="3"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="4"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="5"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="6"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="7"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="8"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/typeOfChairs"
+        android:layout_below="@id/chairs"
+        android:layout_alignRight="@id/chairs"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
             <Button
-                android:layout_marginLeft="35dp"
-                android:id="@+id/button5"
+                android:id="@+id/button10"
                 android:text="X"
                 android:background="@drawable/roundbuttondisable"
                 android:textSize="20dp"
                 android:enabled="false"
-                android:layout_marginRight="3dp"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 />
-
-
-
+            <TextView
+                android:text="Ghế đã đặt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
             <Button
                 android:id="@+id/button6"
-                android:layout_marginLeft="35dp"
                 android:background="@drawable/roundbuttongray"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 />
+            <TextView
+                android:text="Ghế trống"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
             <Button
                 android:id="@+id/button7"
-                android:layout_marginLeft="35dp"
-                android:background="@drawable/roundbuttongreen"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                />
+                android:background="@drawable/roundbuttongreen" />
+            <TextView
+                android:text="Đang chọn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
             <Button
                 android:id="@+id/button8"
-                android:layout_marginLeft="35dp"
-                android:background="@drawable/roundbackgroundyellow"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                />
+                android:background="@drawable/roundbackgroundyellow" />
+            <TextView
+                android:text="Ghế VIP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/roundbackgroundred" />
+            <TextView
+                android:text="Ghế đôi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
 
-        </TableRow>
-        <TableRow>
-            <TextView android:text="Ghế đã đặt" android:layout_marginLeft="20dp"/>
-            <TextView android:text="Ghế trống" android:layout_marginLeft="20dp"/>
-            <TextView android:text="Ghế đang chọn" android:width="50dp" android:gravity="center" android:layout_marginLeft="20dp"/>
-            <TextView android:text="Ghế VIP" android:layout_marginLeft="20dp" android:gravity="center"/>
-        </TableRow>
-    </TableLayout>
+
+
+
+
+
+
+    </LinearLayout>
     <Button
         android:id="@+id/btnContinue"
         android:layout_width="match_parent"

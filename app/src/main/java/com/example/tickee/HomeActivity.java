@@ -12,8 +12,8 @@ import android.view.View;
 
 import com.example.tickee.cinema.CinemaFragment;
 import com.example.tickee.filmschedule.FilmScheduleActivity;
-import com.example.tickee.home.ClickOnDCFilmActivity;
-import com.example.tickee.home.ClickOnSCFilmActivity;
+import com.example.tickee.home.ClickOnPlayedFilmActivity;
+import com.example.tickee.home.ClickOnWillPlayFilmActivity;
 import com.example.tickee.home.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -57,11 +57,11 @@ public class    HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(this, FilmScheduleActivity.class);
         startActivity(intent);
     }public void onClickStoppedPlayFilm(View view){
-        Intent intent = new Intent(this, ClickOnDCFilmActivity.class);
+        Intent intent = new Intent(this, ClickOnPlayedFilmActivity.class);
         startActivity(intent);
     }
     public void onClickSCFilm(View view){
-        Intent intent = new Intent(this, ClickOnSCFilmActivity.class);
+        Intent intent = new Intent(this, ClickOnWillPlayFilmActivity.class);
         startActivity(intent);
     }
     public void onClickNew(View view) {

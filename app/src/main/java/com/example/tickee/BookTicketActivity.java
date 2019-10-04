@@ -3,7 +3,6 @@ package com.example.tickee;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -185,7 +184,7 @@ public class BookTicketActivity extends AppCompatActivity {
             continueLayout.setBackground(getDrawable(R.color.gray));
             btnContinue.setEnabled(false);
         }else{
-            continueLayout.setBackground(getDrawable(R.color.BHD));
+            continueLayout.setBackground(getDrawable(R.color.green));
             btnContinue.setEnabled(true);
         }
         return total;

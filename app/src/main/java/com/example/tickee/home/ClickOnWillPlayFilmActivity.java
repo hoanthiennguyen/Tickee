@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.tickee.R;
 
-public class ClickOnSCFilmActivity extends AppCompatActivity {
+public class ClickOnWillPlayFilmActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_click_on_scfilm);
+        setContentView(R.layout.activity_click_on_will_play_film);
     }
 }

@@ -41,7 +41,7 @@ public class SelectChairActivity extends AppCompatActivity {
                 Toast.makeText(this, "Bạn đã chọn đủ " + numberOfNeedToChoose + " ghế" , Toast.LENGTH_SHORT).show();
             if(numberOfSelected == numberOfNeedToChoose){
                 btnContinue.setEnabled(true);
-                btnContinue.setBackgroundColor(getResources().getColor(R.color.BHD));
+                btnContinue.setBackgroundColor(getResources().getColor(R.color.green));
             }
 
         }

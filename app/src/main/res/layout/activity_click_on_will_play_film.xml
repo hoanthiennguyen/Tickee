@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home.ClickOnSCFilmActivity">
+    tools:context=".home.ClickOnWillPlayFilmActivity">
 
 
     <fragment
@@ -13,10 +13,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <Button
-
         android:layout_below="@id/fragment2"
         android:textSize="14dp"
         android:text="Nhận thông báo"
+        android:drawableLeft="@drawable/ic_notifications_none_black_24dp"
+        android:paddingHorizontal="10dp"
         android:layout_marginLeft="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

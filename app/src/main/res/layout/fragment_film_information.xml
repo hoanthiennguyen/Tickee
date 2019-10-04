@@ -19,7 +19,7 @@
         android:layout_below="@id/trailerFilm"
         android:layout_marginLeft="10dp"
         android:text="Mắt biếc"
-        android:textColor="@color/CNS"
+        android:textColor="@color/purple"
         android:textSize="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

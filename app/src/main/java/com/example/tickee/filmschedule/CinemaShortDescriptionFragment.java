@@ -1,7 +1,6 @@
 package com.example.tickee.filmschedule;
 
 
-import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.tickee.R;
 
@@ -44,16 +42,16 @@ public class CinemaShortDescriptionFragment extends Fragment {
         int color = 0;
         switch (cinema) {
             case "BHD":
-                color = getResources().getColor(R.color.BHD);
+                color = getResources().getColor(R.color.green);
                 break;
             case "Lotte":
-                color = getResources().getColor(R.color.Lotte);
+                color = getResources().getColor(R.color.red);
                 break;
             case "MegaGS":
-                color = getResources().getColor(R.color.MegaGS);
+                color = getResources().getColor(R.color.yellow);
                 break;
             case "CNS":
-                color = getResources().getColor(R.color.CNS);
+                color = getResources().getColor(R.color.purple);
                 break;
         }
         txtCinema.setTextColor(color);

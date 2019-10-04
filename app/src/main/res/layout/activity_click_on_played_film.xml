@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home.ClickOnDCFilmActivity">
+    tools:context=".home.ClickOnPlayedFilmActivity">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -14,7 +14,7 @@
             android:layout_height="wrap_content">
             <fragment
                 android:id="@+id/fragment"
-                android:name="com.example.tickee.home.FilmDCInformationFragment"
+                android:name="com.example.tickee.home.PlayedFilmInformationFragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <LinearLayout
@@ -98,6 +98,7 @@
 
             <Button
                 android:layout_width="wrap_content"
+                android:paddingHorizontal="10dp"
                 android:text="Gửi yêu cầu"
                 android:layout_height="wrap_content" />
             </LinearLayout>
