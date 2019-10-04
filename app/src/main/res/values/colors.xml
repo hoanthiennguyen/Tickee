@@ -11,6 +11,6 @@
     <color name="selectedItemColor">#F44336</color>
     <color name="MegaGS">#FFC107</color>
     <color name="navigationBackground">#555555</color>
-    <color name="gray">#818181</color>
+    <color name="gray">#81818181</color>
     <color name="disable">#D6CECE</color>
 </resources>
