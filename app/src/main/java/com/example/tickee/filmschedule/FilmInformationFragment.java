@@ -39,6 +39,7 @@ public class FilmInformationFragment extends Fragment {
         Uri u = Uri.parse(path);
 
         vid.setVideoURI(u);
+        vid.seekTo( 8000 );
         return view;
     }
 
