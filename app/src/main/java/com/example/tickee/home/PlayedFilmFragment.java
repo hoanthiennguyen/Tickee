@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RatingBar;
+import android.widget.TextView;
 
 import com.example.tickee.R;
 
@@ -37,7 +38,9 @@ public class PlayedFilmFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_played_film, container, false);
         ImageView imageView = view.findViewById(R.id.roundedImageView);
         RatingBar ratingBar = view.findViewById(R.id.ratingBar);
+        TextView txtRating = view.findViewById(R.id.txtRating);
         ratingBar.setRating(rating);
+        txtRating.setText(rating*2+"");
         imageView.setImageResource(imgId);
         return view;
     }

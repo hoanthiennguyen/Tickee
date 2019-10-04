@@ -40,12 +40,14 @@ public class PlayingFilmFragment extends Fragment {
         ImageView imageView = view.findViewById(R.id.roundedImageView);
         TextView txtAgeRequired = view.findViewById(R.id.txtAgeRequired);
         RatingBar ratingBar = view.findViewById(R.id.ratingBar);
+        TextView txtRating = view.findViewById(R.id.txtRating);
         if(ageRequired == null)
             txtAgeRequired.setVisibility(View.INVISIBLE);
         else{
             txtAgeRequired.setVisibility(View.VISIBLE);
             txtAgeRequired.setText(ageRequired);
         }
+        txtRating.setText(rating*2+"");
         ratingBar.setRating(rating);
         imageView.setImageResource(imgId);
         return view;

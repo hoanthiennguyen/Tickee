@@ -39,12 +39,10 @@ public class WillPlayFilmFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_will_play_film, container, false);
         ImageView imageView = view.findViewById(R.id.roundedImageView);
-        RatingBar ratingBar = view.findViewById(R.id.ratingBar);
         TextView txtDateToBeShowed = view.findViewById(R.id.txtDateToBeShowed);
         TextView txtAgeRequired = view.findViewById(R.id.txtAgeRequired);
 
         imageView.setImageResource(imgId);
-        ratingBar.setRating(rating);
         txtDateToBeShowed.setText(date);
         if(ageRequired == null)
             txtAgeRequired.setVisibility(View.INVISIBLE);

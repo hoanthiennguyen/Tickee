@@ -16,7 +16,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="500dp"
-            android:background="@android:color/darker_gray"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -30,15 +29,7 @@
                     android:layout_marginTop="15dp"
                     android:src="@drawable/cns" />
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="20dp"
-                    android:text="Đăng xuất"
-                    android:textSize="15dp" />
+
 
             </RelativeLayout>
 
@@ -74,35 +65,30 @@
 
             </LinearLayout>
 
-            <androidx.cardview.widget.CardView
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content">
 
-                <RelativeLayout
+                <TextView
+                    android:id="@+id/textView9"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Xếp hạng thành viên:  Starter" />
+
+                <TextView
+                    android:textSize="16dp"
+                    android:text="Đăng xuất"
                     android:layout_width="match_parent"
-                    android:layout_height="109dp">
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/textView9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginStart="22dp"
-                        android:layout_marginTop="25dp"
-                        android:text="Xếp hạng thành viên" />
-
-                    <TextView
-                        android:id="@+id/textView10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginStart="22dp"
-                        android:layout_marginTop="66dp"
-                        android:text="Starter" />
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
     </ScrollView>
