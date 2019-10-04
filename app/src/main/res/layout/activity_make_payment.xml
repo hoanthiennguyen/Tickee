@@ -53,11 +53,17 @@
             android:id="@+id/txtStreeCNS"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
+            android:layout_weight="1"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/txtCinemaCNS2"
             android:gravity="center"
             android:text="- Phạm Văn Đồng"
             android:textSize="20dp" />
+        <TextView
+            android:text="3:00"
+            android:id="@+id/txtTimeRemaining"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
     <LinearLayout

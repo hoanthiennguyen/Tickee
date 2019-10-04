@@ -4,19 +4,41 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class SelectChairActivity extends AppCompatActivity {
     int numberOfSelected;
     int numberOfNeedToChoose = 2;
+    TextView txtTimeRemaining;
     Button btnContinue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_chair);
         btnContinue = findViewById(R.id.btnContinue);
+        txtTimeRemaining = findViewById(R.id.txtTimeRemaining);
+        new CountDownTimer(5*60*1000, 1000) {
+
+            public void onTick(long millisUntilFinished) {
+                txtTimeRemaining.setText(convertSecondToTime(millisUntilFinished));
+            }
+
+            public void onFinish() {
+                finish();
+            }
+        }.start();
+    }
+
+    private String convertSecondToTime(long remainMiliSecond){
+        int remainSecond =(int) remainMiliSecond/1000;
+        int minute = remainSecond/60;
+        int second = remainSecond%60;
+        String strSecond = second < 10 ? "0" + second : "" + second;
+        return minute +":" + strSecond;
     }
     public void onClickExit(View view){
         finish();
