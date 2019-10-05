@@ -35,7 +35,7 @@ public class CinemaShortDescriptionRecyclerAdapter extends RecyclerView.Adapter<
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         System.out.println("position" + position);
         holder.cinemaName.setText(data.get(position).getName());
-        holder.cinemaDistance.setText(data.get(position).getDistance());
+//        holder.cinemaDistance.setText(data.get(position).getDistance());
         holder.cinemaStreet.setText(" - "   + data.get(position).getStreet());
     }
 
@@ -52,9 +52,9 @@ public class CinemaShortDescriptionRecyclerAdapter extends RecyclerView.Adapter<
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            cinemaName =  itemView.findViewById(R.id.cinema_name);
+            cinemaName =  itemView.findViewById(R.id.cinema_des_name);
             cinemaStreet =  itemView.findViewById(R.id.cinema_street);
-            cinemaDistance =  itemView.findViewById(R.id.cinema_distance);
+
 
         }
     }

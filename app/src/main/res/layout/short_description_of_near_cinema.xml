@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -23,32 +24,80 @@
             android:gravity="center_vertical"
             android:text="Cinema"
             android:textSize="20dp"
-            android:id="@+id/cinema_name"/>
+            android:id="@+id/cinema_des_name"/>
+
+
         <TextView
-            android:textColor="#ffffff"
+            android:id="@+id/cinema_street"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:text=" - Street"
-            android:textSize="20dp"
-            android:id="@+id/cinema_street"/>
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:id="@+id/btnDrop"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_keyboard_arrow_up_black_24dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+        android:id="@+id/expan_list_movie"
+        android:layout_below="@id/btnDrop"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="bounce">
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@mipmap/ic_launcher_round"
+            android:id="@+id/img_movie_poster"/>
 
 
-
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp">
 
             <TextView
                 android:textColor="#ffffff"
-                android:layout_weight="1"
-                android:gravity="right"
-                android:id="@+id/cinema_distance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
-                android:text="2km"
-                android:textSize="20dp"
-                />
+                android:textStyle="bold"
+                android:text="Movie"
+                android:id="@+id/movie_name"/>
 
-    </LinearLayout>
+            <TextView
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:id="@+id/movie_des"/>
+        </LinearLayout>
+
+
+
+
+    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
 
     <TextView
         android:id="@+id/timeDetails"
