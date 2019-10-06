@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashscreen"
+    tools:context=".LoginActivity">
+    <Button
+        android:layout_marginTop="20sp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_width="match_parent"
+        android:text="Login with Zalo"
+        android:onClick="onClickLogin"
+        android:background="@drawable/roundbuttonlightblue"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_width="match_parent"
+        android:onClick="onClickLogin"
+        android:text="Login with Google"
+        android:background="@drawable/roundbackgroundred"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20sp"
+        android:onClick="onClickLogin"
+        android:layout_width="match_parent"
+        android:text="Login with Facebook"
+        android:background="@drawable/roundbuttonfacebookblue"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

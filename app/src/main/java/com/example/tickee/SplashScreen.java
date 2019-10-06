@@ -15,7 +15,7 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
         iv = findViewById(R.id.img_splash);
-        iv.setImageResource(R.drawable.splash_icon2);
+        iv.setImageResource(R.drawable.splash_icon);
         Animation myanim = AnimationUtils.loadAnimation(this, R.anim.mytrainsition);
         iv.startAnimation(myanim);
 
