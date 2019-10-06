@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class MakePaymentActivity extends AppCompatActivity {
@@ -14,6 +15,8 @@ public class MakePaymentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_make_payment);
         txtTimeRemaining = findViewById(R.id.txtTimeRemaining);
+        RadioGroup radioGroup = findViewById(R.id.radioGroup);
+        radioGroup.check(R.id.radioZalopPay);
         new CountDownTimer(3*60*1000, 1000) {
 
             public void onTick(long millisUntilFinished) {

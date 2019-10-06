@@ -20,11 +20,9 @@
 
 
     <include layout="@layout/list_of_day"></include>
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_below="@id/daysContainer"
-        android:layout_width="match_parent"
+    <ExpandableListView
+        android:layout_below="@+id/daysContainer"
+        android:id="@+id/lvExp"
         android:layout_height="match_parent"
-        android:id="@+id/near_cinema_recycler">
-
-    </androidx.recyclerview.widget.RecyclerView>
+        android:layout_width="match_parent"/>
 </RelativeLayout>

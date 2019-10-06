@@ -9,7 +9,7 @@
 
     <fragment
         android:id="@+id/fragment2"
-        android:name="com.example.tickee.filmschedule.FilmInformationFragment"
+        android:name="com.example.tickee.home.PlayedFilmInformationFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <Button
