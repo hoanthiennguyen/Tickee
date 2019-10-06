@@ -68,10 +68,7 @@ public class    HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ClickOnNewActivity.class);
         startActivity(intent);
     }
-    public void onClickRatingFilm(View view){
-        Intent intent = new Intent(this, FilmRatingActivity.class);
-        startActivity(intent);
-    }
+
     public void onClickLogout(View view){
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);

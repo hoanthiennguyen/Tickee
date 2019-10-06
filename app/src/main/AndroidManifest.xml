@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/MyTheme">
         <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".FilmRatingActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".MakePaymentActivity" />
         <activity android:name=".SelectChairActivity" />
