@@ -96,7 +96,7 @@
                     android:layout_alignParentTop="true"
                     android:onClick="onClickTransactionHistory"
                     android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
-                    android:text="Lịch sử giao dịch" />
+                    android:text="Vé đã mua" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
