@@ -16,4 +16,8 @@
         android:id="@+id/nav_account"
         android:icon="@drawable/ic_person_black_24dp"
         android:title="Tài khoản" />
+    <item
+        android:id="@+id/nav_notification"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Thông Báo"/>
 </menu>

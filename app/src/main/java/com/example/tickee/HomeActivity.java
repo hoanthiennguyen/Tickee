@@ -45,7 +45,9 @@ public class    HomeActivity extends AppCompatActivity {
                     case R.id.nav_account:
                         fragment = new AccountFragment();
                         break;
-
+                    case R.id.nav_notification:
+                        fragment = new NotificationFragment();
+                        break;
                 }
                 transaction.replace(R.id.fragmentContainer, fragment);
                 transaction.commit();
