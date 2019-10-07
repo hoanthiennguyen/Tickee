@@ -2,6 +2,7 @@ package com.example.tickee;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -37,5 +38,9 @@ public class MakePaymentActivity extends AppCompatActivity {
         int second = remainSecond%60;
         String strSecond = second < 10 ? "0" + second : "" + second;
         return minute +":" + strSecond;
+    }
+    public void onClickMakePayment(View view){
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
     }
 }

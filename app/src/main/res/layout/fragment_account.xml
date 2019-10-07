@@ -86,6 +86,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@android:color/darker_gray"/>
+                <TextView
+                    android:id="@+id/textView10"
+                    android:textSize="16dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:text="Vé đã mua" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
 
 
                 <TextView

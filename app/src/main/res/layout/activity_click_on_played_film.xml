@@ -100,7 +100,8 @@
                 android:layout_width="wrap_content"
                 android:layout_marginVertical="20dp"
                 android:paddingHorizontal="10dp"
-                android:background="@drawable/roundbuttonlightblue"
+                android:background="@drawable/roundbuttongreen"
+                android:onClick="onClickSubmit"
                 android:text="Gửi yêu cầu"
                 android:layout_height="wrap_content" />
             </LinearLayout>
