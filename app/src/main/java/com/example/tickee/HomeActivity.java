@@ -72,5 +72,9 @@ public class    HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
+    public void onClickTransactionHistory(View view){
+        Intent intent = new Intent(this, TransactionHistoryActivity.class);
+        startActivity(intent);
+    }
 
 }

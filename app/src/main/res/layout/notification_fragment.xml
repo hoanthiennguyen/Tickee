@@ -33,6 +33,7 @@
                     android:layout_height="wrap_content"
                     android:text="06/10/2019"
                     android:paddingLeft="10dp"
+                    
                     android:paddingTop="10dp"/>
 
                 <androidx.cardview.widget.CardView
@@ -40,8 +41,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
                     android:layout_marginRight="11dp"
-
-                    android:layout_marginTop="7dp"
+                    
+                    android:layout_marginTop="15dp"
 
 app:cardBackgroundColor="#333333">
 
@@ -69,7 +70,7 @@ app:cardBackgroundColor="#333333">
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
                     android:layout_marginRight="11dp"
-                    android:layout_marginTop="7dp"
+                    android:layout_marginTop="15dp"
 
 app:cardBackgroundColor="#333333">
 
@@ -97,7 +98,7 @@ app:cardBackgroundColor="#333333">
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
                     android:layout_marginRight="11dp"
-                    android:layout_marginTop="7dp"
+                    android:layout_marginTop="15dp"
                     app:cardBackgroundColor="#333333">
 
                     <LinearLayout
@@ -124,7 +125,7 @@ app:cardBackgroundColor="#333333">
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
                     android:layout_marginRight="11dp"
-                    android:layout_marginTop="7dp"
+                    android:layout_marginTop="15dp"
                     app:cardBackgroundColor="#333333">
 
                     <LinearLayout
@@ -156,7 +157,7 @@ app:cardBackgroundColor="#333333">
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
                     android:layout_marginRight="11dp"
-                    android:layout_marginTop="7dp"
+                    android:layout_marginTop="15dp"
                     app:cardBackgroundColor="#333333">
 
                     <LinearLayout
@@ -185,7 +186,7 @@ app:cardBackgroundColor="#333333">
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
                     android:layout_marginRight="11dp"
-                    android:layout_marginTop="7dp"
+                    android:layout_marginTop="15dp"
                     app:cardBackgroundColor="#333333">
 
                     <LinearLayout
@@ -212,7 +213,7 @@ app:cardBackgroundColor="#333333">
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
                     android:layout_marginRight="11dp"
-                    android:layout_marginTop="7dp"
+                    android:layout_marginTop="15dp"
                     app:cardBackgroundColor="#333333">
 
                     <LinearLayout
@@ -239,7 +240,7 @@ app:cardBackgroundColor="#333333">
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
                     android:layout_marginRight="11dp"
-                    android:layout_marginTop="7dp"
+                    android:layout_marginTop="15dp"
                     app:cardBackgroundColor="#333333">
 
                     <LinearLayout
