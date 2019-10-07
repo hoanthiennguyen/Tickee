@@ -6,17 +6,28 @@
     tools:context=".filmschedule.FilmInformationFragment">
 
 
-    <VideoView
-        android:id="@+id/trailerFilm"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
+    <FrameLayout
+        android:id="@+id/frameTrailer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <VideoView
+            android:id="@+id/trailerFilm"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
 
-         />
+            />
+        <ImageView
+            android:onClick="onClickPlayTrailer"
+            android:layout_gravity="center"
+            android:src="@drawable/playicon2"
+            android:layout_width="70sp"
+            android:layout_height="70sp"/>
+    </FrameLayout>
     <TextView
         android:id="@+id/filmTitle"
-        android:layout_below="@id/trailerFilm"
+        android:layout_below="@id/frameTrailer"
         android:layout_marginLeft="10dp"
         android:text="Hoa vàng cỏ xanh"
         android:textColor="@color/yellow"
@@ -28,7 +39,7 @@
         android:id="@+id/filmInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/trailerFilm"
+        android:layout_below="@id/frameTrailer"
         android:layout_alignBottom="@id/filmTitle"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="2dp"

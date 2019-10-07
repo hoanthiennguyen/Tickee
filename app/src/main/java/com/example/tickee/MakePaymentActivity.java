@@ -1,7 +1,9 @@
 package com.example.tickee;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -30,7 +32,21 @@ public class MakePaymentActivity extends AppCompatActivity {
         }.start();
     }
     public void onClickExit(View view){
-        finish();
+        new AlertDialog.Builder(this)
+                .setMessage("Bạn chắc chắn muốn hủy giao dịch và trở về trang chủ?")
+
+                // Specifying a listener allows you to take an action before dismissing the dialog.
+                // The dialog is automatically dismissed when a dialog button is clicked.
+                .setPositiveButton("Có", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(MakePaymentActivity.this, HomeActivity.class);
+                        startActivity(intent);
+                    }
+                })
+
+                // A null listener allows the button to dismiss the dialog and take no further action.
+                .setNegativeButton("Không", null)
+                .show();
     }
     private String convertSecondToTime(long remainMiliSecond){
         int remainSecond =(int) remainMiliSecond/1000;
@@ -40,7 +56,7 @@ public class MakePaymentActivity extends AppCompatActivity {
         return minute +":" + strSecond;
     }
     public void onClickMakePayment(View view){
-        Intent intent = new Intent(this, HomeActivity.class);
+        Intent intent = new Intent(this, SuccessTransactionActivity.class);
         startActivity(intent);
     }
 }

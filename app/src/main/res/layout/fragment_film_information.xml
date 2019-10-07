@@ -5,18 +5,30 @@
     android:layout_height="wrap_content"
     tools:context=".filmschedule.FilmInformationFragment">
 
+    <FrameLayout
+        android:id="@+id/frameTrailer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <VideoView
+            android:id="@+id/trailerFilm"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
 
-    <VideoView
-        android:id="@+id/trailerFilm"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
+            />
+        <ImageView
+            android:onClick="onClickPlayTrailer"
+            android:layout_gravity="center"
+            android:src="@drawable/playicon2"
+            android:layout_width="70sp"
+            android:layout_height="70sp"/>
+    </FrameLayout>
 
-         />
+
     <TextView
         android:id="@+id/filmTitle"
-        android:layout_below="@id/trailerFilm"
+        android:layout_below="@id/frameTrailer"
         android:layout_marginLeft="10dp"
         android:text="Mắt biếc"
         android:textColor="@color/purple"

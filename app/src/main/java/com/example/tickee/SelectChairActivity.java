@@ -1,7 +1,9 @@
 package com.example.tickee;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -41,7 +43,21 @@ public class SelectChairActivity extends AppCompatActivity {
         return minute +":" + strSecond;
     }
     public void onClickExit(View view){
-        finish();
+        new AlertDialog.Builder(this)
+                .setMessage("Bạn chắc chắn muốn hủy giao dịch và trở về trang chủ?")
+
+                // Specifying a listener allows you to take an action before dismissing the dialog.
+                // The dialog is automatically dismissed when a dialog button is clicked.
+                .setPositiveButton("Có", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(SelectChairActivity.this, HomeActivity.class);
+                        startActivity(intent);
+                    }
+                })
+
+                // A null listener allows the button to dismiss the dialog and take no further action.
+                .setNegativeButton("Không", null)
+                .show();
     }
     public void onClickChair(View view){
 

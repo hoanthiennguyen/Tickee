@@ -19,7 +19,7 @@ import com.example.tickee.R;
  * A simple {@link Fragment} subclass.
  */
 public class FilmInformationFragment extends Fragment {
-
+    VideoView videoView;
 
     public FilmInformationFragment() {
         // Required empty public constructor
@@ -31,15 +31,15 @@ public class FilmInformationFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_film_information, container, false);
-        VideoView vid = view.findViewById(R.id.trailerFilm);
+        videoView = view.findViewById(R.id.trailerFilm);
         MediaController m = new MediaController(getActivity());
-        vid.setMediaController(m);
+        videoView.setMediaController(m);
 
         String path = "android.resource://com.example.tickee/"+R.raw.matbiec;
         Uri u = Uri.parse(path);
 
-        vid.setVideoURI(u);
-        vid.seekTo( 8000 );
+        videoView.setVideoURI(u);
+        videoView.seekTo( 8000 );
         return view;
     }
 

@@ -1,7 +1,9 @@
 package com.example.tickee;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -193,8 +195,24 @@ public class BookTicketActivity extends AppCompatActivity {
         Intent intent = new Intent(this,SelectChairActivity.class);
         startActivity(intent);
     }
-    public void onClickExit(View view){
-        finish();
+
+    public void onClickExit(View view) {
+        new AlertDialog.Builder(this)
+                .setMessage("Bạn chắc chắn muốn hủy giao dịch và trở về trang chủ?")
+
+                // Specifying a listener allows you to take an action before dismissing the dialog.
+                // The dialog is automatically dismissed when a dialog button is clicked.
+                .setPositiveButton("Có", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(BookTicketActivity.this, HomeActivity.class);
+                        startActivity(intent);
+                    }
+                })
+
+                // A null listener allows the button to dismiss the dialog and take no further action.
+                .setNegativeButton("Không", null)
+                .show();
     }
+
 
 }

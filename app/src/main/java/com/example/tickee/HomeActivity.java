@@ -1,10 +1,12 @@
 package com.example.tickee;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -69,8 +71,21 @@ public class    HomeActivity extends AppCompatActivity {
     }
 
     public void onClickLogout(View view){
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
+        new AlertDialog.Builder(this)
+                .setMessage("Bạn chắc chắn muốn đăng xuất?")
+
+                // Specifying a listener allows you to take an action before dismissing the dialog.
+                // The dialog is automatically dismissed when a dialog button is clicked.
+                .setPositiveButton("Có", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
+                        startActivity(intent);
+                    }
+                })
+
+                // A null listener allows the button to dismiss the dialog and take no further action.
+                .setNegativeButton("Không", null)
+                .show();
     }
     public void onClickTransactionHistory(View view){
         Intent intent = new Intent(this, TransactionHistoryActivity.class);

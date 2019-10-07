@@ -14,7 +14,7 @@ import com.example.tickee.R;
 import com.google.android.material.tabs.TabLayout;
 
 public class FilmScheduleActivity extends AppCompatActivity {
-    VideoView vid;
+    VideoView mPlayer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +61,18 @@ public class FilmScheduleActivity extends AppCompatActivity {
         Intent intent = new Intent(this, BookTicketActivity.class);
         startActivity(intent);
     }
+    public void onClickPlayTrailer(View view){
+        mPlayer = findViewById(R.id.trailerFilm);
+        if (mPlayer.isPlaying()) {
+            view.setVisibility(View.VISIBLE);
+            mPlayer.pause();
+        } else {
+            mPlayer.start();
+            // hide button once playback starts
+            view.setVisibility(View.INVISIBLE);
+        }
+    }
+
 
 
 

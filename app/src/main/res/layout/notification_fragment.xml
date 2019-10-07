@@ -109,33 +109,6 @@ app:cardBackgroundColor="#333333">
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:src="@drawable/reminder"
-                            android:scaleType="centerCrop"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Phim 300 Chiến Binh sẽ được chiếu lại tại rạp CGV Thủ Đức vào ngày 10/10/2019."
-                            android:textColor="#ffffff"
-                            android:textSize="15sp"
-                            android:paddingLeft="5dp"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="11dp"
-                    android:layout_marginRight="11dp"
-                    android:layout_marginTop="15dp"
-                    app:cardBackgroundColor="#333333">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
                             android:src="@drawable/sale"
                             android:scaleType="centerCrop"/>
                         <TextView
@@ -168,18 +141,18 @@ app:cardBackgroundColor="#333333">
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:src="@drawable/reminder"
+                            android:src="@drawable/notinew"
                             android:scaleType="centerCrop"/>
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:paddingLeft="5dp"
-                            android:text="Phim 300 Chiến Binh sẽ được chiếu lại tại rạp CGV Thủ Đức vào ngày 10/10/2019."
+                            android:text="Phim 50 Sắc Thái đã bắt đầu chiếu tại rạp CGV Thủ Đức vào hôm nay."
                             android:textColor="#ffffff"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:paddingLeft="5dp"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -230,33 +203,6 @@ app:cardBackgroundColor="#333333">
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Bạn đã đặt thành công 2 vé xem phim Sheep ngày 10/10/2019."
-                            android:textColor="#ffffff"
-                            android:textSize="15sp"
-                            android:paddingLeft="5dp"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="11dp"
-                    android:layout_marginRight="11dp"
-                    android:layout_marginTop="15dp"
-                    app:cardBackgroundColor="#333333">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:src="@drawable/notinew"
-                            android:scaleType="centerCrop"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Phim 50 Sắc Thái đã bắt đầu chiếu tại rạp CGV Thủ Đức vào hôm nay."
                             android:textColor="#ffffff"
                             android:textSize="15sp"
                             android:paddingLeft="5dp"/>

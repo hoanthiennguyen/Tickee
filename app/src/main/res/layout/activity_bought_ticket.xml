@@ -85,6 +85,7 @@
                             android:src="@drawable/success"
                             android:scaleType="centerCrop"/>
                         <TextView
+                            android:onClick="onClickTransactionDetails"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Mua 4 vé xem phim 'Mắt biếc' ở BHD Quang Trung"
@@ -119,6 +120,7 @@
                             android:scaleType="centerCrop"/>
 
                         <TextView
+                            android:onClick="onClickTransactionDetails"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="5dp"
@@ -147,6 +149,7 @@
                             android:src="@drawable/success"
                             android:scaleType="centerCrop"/>
                         <TextView
+                            android:onClick="onClickTransactionDetails"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Mua 2 vé xem phim 'Em chưa 18' ở CNS Trường Chinh"
