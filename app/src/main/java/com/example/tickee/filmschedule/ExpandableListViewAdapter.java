@@ -16,13 +16,19 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
     private List<String> _listDataHeader; // header titles
     // child data in format of header title, child title
     private HashMap<String, List<String>> _listDataChild;
-    private String[] distances = {"0.3 km", "0.5 km", "1.2 km"};
+    private String[] distances = {"0.3 km", "0.5 km", "1.2 km","1.5 km","2 km"};
+    HashMap<String,Integer> colorsOfCinema = new HashMap<>();
     private int[] colors = {R.color.purple, R.color.StarColor, R.color.green, R.color.blueButton};
     public ExpandableListViewAdapter(Context context, List<String> listDataHeader,
                                  HashMap<String, List<String>> listChildData) {
         this._context = context;
         this._listDataHeader = listDataHeader;
         this._listDataChild = listChildData;
+        colorsOfCinema.put("BHD", R.color.green);
+        colorsOfCinema.put("CNS", R.color.purple);
+        colorsOfCinema.put("Galaxy", R.color.StarColor);
+        colorsOfCinema.put("MegaCS", R.color.yellow);
+
     }
 
     @Override
@@ -79,20 +85,28 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
     @Override
     public View getGroupView(int groupPosition, boolean isExpanded,
                              View convertView, ViewGroup parent) {
-        String headerTitle = (String) getGroup(groupPosition);
+        String title = (String) getGroup(groupPosition);
         if (convertView == null) {
             LayoutInflater infalInflater = (LayoutInflater) this._context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = infalInflater.inflate(R.layout.film_schedule_list, null);
         }
+        int indexOfFirstSpace = title.indexOf(' ');
+        String cinemaName = title.substring(0,indexOfFirstSpace);
+        String street = title.substring(indexOfFirstSpace);
 
-        TextView lblListHeader = (TextView) convertView
-                .findViewById(R.id.lblListHeader);
-        lblListHeader.setTextColor(_context.getResources().getColor(colors[groupPosition]));
+        TextView txtStreet = (TextView) convertView
+                .findViewById(R.id.txtCinemaStreet);
+        TextView txtCinemaName = convertView.findViewById(R.id.txtCinemaName);
         TextView txtDistance = convertView.findViewById(R.id.txtDistance);
+
+        txtCinemaName.setText(cinemaName);
+        txtCinemaName.setTextColor(_context.getResources().getColor(colorsOfCinema.get(cinemaName)));
+
         txtDistance.setText(distances[groupPosition]);
-        lblListHeader.setTypeface(null, Typeface.BOLD);
-        lblListHeader.setText(headerTitle);
+        txtStreet.setTypeface(null, Typeface.BOLD);
+        txtCinemaName.setTypeface(null, Typeface.BOLD);
+        txtStreet.setText(street);
 
         return convertView;
     }

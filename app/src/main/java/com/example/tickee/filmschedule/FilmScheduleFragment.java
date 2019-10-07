@@ -62,6 +62,7 @@ public class FilmScheduleFragment extends Fragment {
         listDataHeader.add("CNS Quang Trung");
         listDataHeader.add("Galaxy Gò Vấp");
         listDataHeader.add("BHD Phan Văn Trị");
+        listDataHeader.add("CNS Lê Lợi");
 
         // Adding child data
         List<String> top250 = new ArrayList<String>();
@@ -82,6 +83,8 @@ public class FilmScheduleFragment extends Fragment {
         listDataChild.put(listDataHeader.get(0), top250); // Header, Child data
         listDataChild.put(listDataHeader.get(1), nowShowing);
         listDataChild.put(listDataHeader.get(2), comingSoon);
+        listDataChild.put(listDataHeader.get(3), nowShowing);
+
     }
 
     @Override

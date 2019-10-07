@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"/>
         <RatingBar
             android:rating="3.5"
-            android:progressTint="@color/StarColor"
+            android:progressTint="@color/yellow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
