@@ -18,7 +18,7 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
     private HashMap<String, List<String>> _listDataChild;
     private String[] distances = {"0.3 km", "0.5 km", "1.2 km","1.5 km","2 km"};
     HashMap<String,Integer> colorsOfCinema = new HashMap<>();
-    private int[] colors = {R.color.purple, R.color.StarColor, R.color.green, R.color.blueButton};
+
     public ExpandableListViewAdapter(Context context, List<String> listDataHeader,
                                  HashMap<String, List<String>> listChildData) {
         this._context = context;
@@ -95,7 +95,7 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
         String cinemaName = title.substring(0,indexOfFirstSpace);
         String street = title.substring(indexOfFirstSpace);
 
-        TextView txtStreet = (TextView) convertView
+        TextView txtStreet = convertView
                 .findViewById(R.id.txtCinemaStreet);
         TextView txtCinemaName = convertView.findViewById(R.id.txtCinemaName);
         TextView txtDistance = convertView.findViewById(R.id.txtDistance);
