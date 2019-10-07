@@ -39,9 +39,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
                     android:layout_marginRight="11dp"
+
                     android:layout_marginTop="7dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="8dp">
+
+app:cardBackgroundColor="#333333">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -68,8 +69,8 @@
                     android:layout_marginLeft="11dp"
                     android:layout_marginRight="11dp"
                     android:layout_marginTop="7dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="8dp">
+
+app:cardBackgroundColor="#333333">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -96,8 +97,7 @@
                     android:layout_marginLeft="11dp"
                     android:layout_marginRight="11dp"
                     android:layout_marginTop="7dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="8dp">
+                    app:cardBackgroundColor="#333333">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -124,8 +124,7 @@
                     android:layout_marginLeft="11dp"
                     android:layout_marginRight="11dp"
                     android:layout_marginTop="7dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="8dp">
+                    app:cardBackgroundColor="#333333">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -157,8 +156,7 @@
                     android:layout_marginLeft="11dp"
                     android:layout_marginRight="11dp"
                     android:layout_marginTop="7dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="8dp">
+                    app:cardBackgroundColor="#333333">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -170,13 +168,14 @@
                             android:layout_height="30dp"
                             android:src="@drawable/reminder"
                             android:scaleType="centerCrop"/>
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
                             android:text="Phim 300 Chiến Binh sẽ được chiếu lại tại rạp CGV Thủ Đức vào ngày 10/10/2019."
                             android:textColor="#ffffff"
-                            android:textSize="15sp"
-                            android:paddingLeft="5dp"/>
+                            android:textSize="15sp" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -186,8 +185,7 @@
                     android:layout_marginLeft="11dp"
                     android:layout_marginRight="11dp"
                     android:layout_marginTop="7dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="8dp">
+                    app:cardBackgroundColor="#333333">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -214,8 +212,7 @@
                     android:layout_marginLeft="11dp"
                     android:layout_marginRight="11dp"
                     android:layout_marginTop="7dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="8dp">
+                    app:cardBackgroundColor="#333333">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -242,8 +239,7 @@
                     android:layout_marginLeft="11dp"
                     android:layout_marginRight="11dp"
                     android:layout_marginTop="7dp"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="8dp">
+                    app:cardBackgroundColor="#333333">
 
                     <LinearLayout
                         android:layout_width="match_parent"

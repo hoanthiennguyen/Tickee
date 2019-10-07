@@ -33,9 +33,6 @@ public class    HomeActivity extends AppCompatActivity {
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 Fragment fragment = null;
                 switch (menuItem.getItemId()) {
-                    case R.id.nav_news:
-                        fragment = new NewsFragment();
-                        break;
                     case R.id.nav_cinema:
                         fragment = new CinemaFragment();
                         break;
