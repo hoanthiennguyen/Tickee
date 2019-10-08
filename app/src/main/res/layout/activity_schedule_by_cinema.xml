@@ -6,33 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".cinema.ScheduleByCinema"
     android:orientation="vertical">
-
-    <com.google.android.material.tabs.TabLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tabSchedule"
-        app:tabIndicatorColor="@color/red"
-        app:tabSelectedTextColor="@color/red"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="0dp"
-        >
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
 
-        <com.google.android.material.tabs.TabItem
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#333333"
+            android:onClick="onClickExitCinema"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+
+
+        <TextView
+            android:id="@+id/txtCurrentTime"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:textSize="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lịch Chiếu"/>
+            android:layout_weight="1"
+            android:text="16:37" />
+    </LinearLayout>
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Thông tin"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
-    </com.google.android.material.tabs.TabLayout>
+        android:id="@+id/txtLichChieu"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:text="Lịch Chiếu"
+        android:layout_marginTop="32dp"/>
 
     <FrameLayout
-        android:layout_below="@+id/tabSchedule"
+        android:layout_below="@+id/txtLichChieu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/scheduleDetail"/>

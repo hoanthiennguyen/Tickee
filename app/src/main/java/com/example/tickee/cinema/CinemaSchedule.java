@@ -55,7 +55,7 @@ public class CinemaSchedule extends Fragment {
         super.onCreate(savedInstanceState);
         listDataHeader = new ArrayList<>();
         listDataHeader.add(new MovieModel("Joker","120p - 7.9 IMDb","~ 00:00","22:00 ","~80k",R.drawable.cgv));
-        listDataHeader.add(new MovieModel("Aquaman","120p - 7.9 IMDb","~ 00:00","22:00 ","~80k",R.drawable.cgv));
-        listDataHeader.add(new MovieModel("Spider man","120p - 7.9 IMDb","~ 00:00","22:00 ","~80k",R.drawable.cgv));
+        listDataHeader.add(new MovieModel("Aquaman","150p - 7.9 IMDb","~ 16:00","13:00 ","~80k",R.drawable.bhd));
+        listDataHeader.add(new MovieModel("Spider man","140p - 7.9 IMDb","~ 00:00","22:00 ","~80k",R.drawable.galaxy));
     }
 }
