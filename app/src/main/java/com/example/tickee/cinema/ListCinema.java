@@ -59,9 +59,9 @@ public class ListCinema extends Fragment {
         List<CinemaModel> cinema = new ArrayList<>();
         List<CinemaModel> cinema1 = new ArrayList<>();
         List<CinemaModel> cinema2 = new ArrayList<>();
-        cinema.add(new CinemaModel("BHD Thao Dien", "18 Thao Dien", "6 km"));
-        cinema1.add(new CinemaModel("CGV Go Vap", "192 Phan Van Tri", "5.6 km"));
-        cinema2.add(new CinemaModel("Galaxy Quang Trung", "231 Quang Trung", "0.8 km"));
+        cinema.add(new CinemaModel("BHD 123 Thao Dien", "BHD 23 Phan Văn Khải", "BHD 78 Nguyễn Tri Phương"));
+        cinema1.add(new CinemaModel("CGV Ngã 6 Go Vap", "CGV 192 Phan Van Tri", "CGV 15 Cộng Hòa"));
+        cinema2.add(new CinemaModel("Galaxy 17 Quang Trung", "Galaxy 255 Lê Lợi", "Galaxy 26 Nguyễn Trãi"));
         listCinema.get(0).setDetails(cinema);
         listCinema.get(1).setDetails(cinema1);
         listCinema.get(2).setDetails(cinema2);

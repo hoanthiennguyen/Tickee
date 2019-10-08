@@ -47,42 +47,80 @@
         android:layout_height="wrap_content"
         app:ael_duration="400"
         app:ael_expanded="false"
+        android:onClick="onClickCinema"
         app:ael_interpolator="bounce"
         >
-        <TextView
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="15sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toLeftOf="@+id/button"
-            android:id="@+id/item_list_cinema_name"
-            android:text="BHD"
             android:padding="8dp"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:textSize="16sp"></TextView>
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/button"
+                android:id="@+id/item_list_cinema_name"
+                android:text="BHD"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"></TextView>
+            <TextView
+                android:gravity="right"
+                android:textSize="16sp"
+                android:text="0.4 km"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="15sp"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/button"
+                android:id="@+id/item_list_cinema_location"
+                android:text="BHD"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"></TextView>
+            <TextView
+                android:gravity="right"
+                android:textSize="16sp"
+                android:text="0.7 km"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="15sp"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/button"
+                android:id="@+id/item_list_cinema_distance"
+                android:text="BHD"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"></TextView>
+            <TextView
+                android:gravity="right"
+                android:textSize="16sp"
+                android:text="1.2 km"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toLeftOf="@+id/button"
-            android:id="@+id/item_list_cinema_location"
-            android:text="BHD"
-            android:padding="8dp"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:textSize="16sp"></TextView>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toLeftOf="@+id/button"
-            android:id="@+id/item_list_cinema_distance"
-            android:text="BHD"
-            android:padding="8dp"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:textSize="16sp"></TextView>
+
     </com.github.aakira.expandablelayout.ExpandableLinearLayout>
 </RelativeLayout>
