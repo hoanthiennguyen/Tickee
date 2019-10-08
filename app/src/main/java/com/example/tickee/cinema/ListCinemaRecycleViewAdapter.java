@@ -81,7 +81,7 @@ public class ListCinemaRecycleViewAdapter extends RecyclerView.Adapter<RecyclerV
 
         });
         viewHolder.button.setRotation(expanState.get(position)?180f:0f);
-        viewHolder.button.setOnClickListener(new View.OnClickListener() {
+        viewHolder.dropdown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 viewHolder.expandableLayout.toggle();
@@ -113,6 +113,7 @@ class MyAdapter extends RecyclerView.ViewHolder{
     public TextView item_list_cinema_distance;
     public ImageView img;
     public RelativeLayout button;
+    public RelativeLayout dropdown;
     public ExpandableLinearLayout expandableLayout;
 
     public MyAdapter(@NonNull View itemView) {
@@ -123,6 +124,7 @@ class MyAdapter extends RecyclerView.ViewHolder{
         item_list_cinema_distance = (TextView) itemView.findViewById(R.id.item_list_cinema_distance);
         img = (ImageView) itemView.findViewById(R.id.img_list_cinema);
         button = (RelativeLayout)itemView.findViewById(R.id.button);
+        dropdown = itemView.findViewById(R.id.btnDropDown);
         expandableLayout = (ExpandableLinearLayout)itemView.findViewById(R.id.expan_list_cinema);
     }
 }
