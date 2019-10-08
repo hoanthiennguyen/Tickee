@@ -53,14 +53,14 @@ public class CinemaSchedule extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         List<TimeModel> timemodelsMatbiec = new ArrayList<>();
-        timemodelsMatbiec.add(new TimeModel("18h ","-> 20h","~80k"));
-        timemodelsMatbiec.add(new TimeModel("20h " ,"-> 22h","~90k"));
+        timemodelsMatbiec.add(new TimeModel("18h ","-   20h","~80k"));
+        timemodelsMatbiec.add(new TimeModel("20h " ,"-   22h","~90k"));
         List<TimeModel> timeModelsThienThan = new ArrayList<>();
-        timeModelsThienThan.add(new TimeModel("17h","-> 18h30","~75k"));
-        timeModelsThienThan.add(new TimeModel("19h","-> 22h30","~85k"));
+        timeModelsThienThan.add(new TimeModel("17h","-   18h30","~75k"));
+        timeModelsThienThan.add(new TimeModel("19h","-   22h30","~85k"));
         List<TimeModel> timeModelsHungThan = new ArrayList<>();
-        timeModelsHungThan.add(new TimeModel("15h","-> 17h30","~70k"));
-        timeModelsHungThan.add(new TimeModel("18h","-> 20h30","~90k"));
+        timeModelsHungThan.add(new TimeModel("15h","-   17h30","~70k"));
+        timeModelsHungThan.add(new TimeModel("18h","-   20h30","~90k"));
 
 
         super.onCreate(savedInstanceState);

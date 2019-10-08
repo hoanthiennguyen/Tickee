@@ -60,8 +60,8 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
         TextView txtPrice = convertView.findViewById(R.id.txtPrice);
 
         txtListChild.setText(inputs[0]);
-        txtEndTime.setText("-> " +inputs[1]);
-        txtPrice.setText(inputs[2]);
+        txtEndTime.setText("-   " +inputs[1]);
+        txtPrice.setText("~ " +inputs[2]);
         return convertView;
     }
 
