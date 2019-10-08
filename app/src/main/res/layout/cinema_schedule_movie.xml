@@ -9,22 +9,24 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
     <ImageView
-        android:layout_width="56dp"
-        android:layout_height="56dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:src="@mipmap/ic_launcher"
         android:id="@+id/img_movie_schdule"
         android:layout_marginLeft="16dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
+        android:gravity="center_vertical"
         android:layout_marginLeft="16dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
+            android:textSize="20sp"
             android:text="Joker"
             android:id="@+id/cinema_movie_name"/>
 
@@ -44,12 +46,14 @@
         android:onClick="onClickBookTiket">
 
         <TextView
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:id="@+id/cinema_movie_startTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"
-            android:text="16:40 ~ 18:40     2D - Phu de" />
+            android:text="16:40" />
 
         <TextView
             android:id="@+id/cinema_movie_endTime"
@@ -57,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"
-            android:text="16:40 ~ 18:40     2D - Phu de" />
+            android:text="18:40" />
 
         <TextView
             android:id="@+id/cinema_movie_price"
@@ -65,7 +69,41 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"
-            android:text="16:40 ~ 18:40     2D - Phu de" />
+            android:text="75k" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:onClick="onClickBookTiket">
+
+        <TextView
+            android:id="@+id/cinema_movie_startTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="16:40" />
+
+        <TextView
+            android:id="@+id/cinema_movie_endTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="18:40" />
+
+        <TextView
+            android:id="@+id/cinema_movie_price2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="75k" />
 
     </LinearLayout>
 

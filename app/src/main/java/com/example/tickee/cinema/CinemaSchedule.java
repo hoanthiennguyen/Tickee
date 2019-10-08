@@ -52,10 +52,21 @@ public class CinemaSchedule extends Fragment {
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
+        List<TimeModel> timemodelsMatbiec = new ArrayList<>();
+        timemodelsMatbiec.add(new TimeModel("18h ","-> 20h","~80k"));
+        timemodelsMatbiec.add(new TimeModel("20h " ,"-> 22h","~90k"));
+        List<TimeModel> timeModelsThienThan = new ArrayList<>();
+        timeModelsThienThan.add(new TimeModel("17h","-> 18h30","~75k"));
+        timeModelsThienThan.add(new TimeModel("19h","-> 22h30","~85k"));
+        List<TimeModel> timeModelsHungThan = new ArrayList<>();
+        timeModelsHungThan.add(new TimeModel("15h","-> 17h30","~70k"));
+        timeModelsHungThan.add(new TimeModel("18h","-> 20h30","~90k"));
+
+
         super.onCreate(savedInstanceState);
         listDataHeader = new ArrayList<>();
-        listDataHeader.add(new MovieModel("Joker","120p - 7.9 IMDb","~ 00:00","22:00 ","~80k",R.drawable.cgv));
-        listDataHeader.add(new MovieModel("Aquaman","150p - 7.9 IMDb","~ 16:00","13:00 ","~80k",R.drawable.bhd));
-        listDataHeader.add(new MovieModel("Spider man","140p - 7.9 IMDb","~ 00:00","22:00 ","~80k",R.drawable.galaxy));
+        listDataHeader.add(new MovieModel("Mắt biếc","120p - 9.0 IMDb",timemodelsMatbiec,R.drawable.matbiecbg));
+        listDataHeader.add(new MovieModel("Minion 2","90p - 7.9 IMDb",timeModelsThienThan,R.drawable.minion));
+        listDataHeader.add(new MovieModel("Hung thần đại dương","150p - 8.9 IMDb",timeModelsHungThan,R.drawable.hungthan));
     }
 }

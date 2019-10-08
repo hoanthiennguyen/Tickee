@@ -1,22 +1,21 @@
 package com.example.tickee.cinema;
 
+import java.util.List;
+
 public class MovieModel {
     private String movieName;
     private String movieDes;
-    private String endTime;
-    private String startTime;
-    private String price;
+    List<TimeModel> timeModelList;
     private int img;
 
     public MovieModel() {
     }
 
-    public MovieModel(String movieName, String movieDes, String endTime, String startTime, String price, int img) {
+
+    public MovieModel(String movieName, String movieDes, List<TimeModel> timeModelList, int img) {
         this.movieName = movieName;
         this.movieDes = movieDes;
-        this.endTime = endTime;
-        this.startTime = startTime;
-        this.price = price;
+        this.timeModelList = timeModelList;
         this.img = img;
     }
 
@@ -36,28 +35,12 @@ public class MovieModel {
         this.movieDes = movieDes;
     }
 
-    public String getEndTime() {
-        return endTime;
+    public List<TimeModel> getTimeModelList() {
+        return timeModelList;
     }
 
-    public void setEndTime(String endTime) {
-        this.endTime = endTime;
-    }
-
-    public String getStartTime() {
-        return startTime;
-    }
-
-    public void setStartTime(String startTime) {
-        this.startTime = startTime;
-    }
-
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
+    public void setTimeModelList(List<TimeModel> timeModelList) {
+        this.timeModelList = timeModelList;
     }
 
     public int getImg() {
