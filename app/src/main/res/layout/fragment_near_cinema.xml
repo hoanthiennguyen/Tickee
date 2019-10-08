@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".cinema.NearCinema"
-    android:background="#383838">
+    android:background="#383838"
+    android:id="@+id/near_cinema_fragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
