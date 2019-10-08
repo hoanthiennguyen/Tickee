@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.tickee.filmschedule.FilmScheduleActivity;
+
 public class SelectChairActivity extends AppCompatActivity {
     int numberOfSelected;
     int numberOfNeedToChoose = 2;
@@ -44,13 +46,13 @@ public class SelectChairActivity extends AppCompatActivity {
     }
     public void onClickExit(View view){
         new AlertDialog.Builder(this)
-                .setMessage("Bạn chắc chắn muốn hủy giao dịch và trở về trang chủ?")
+                .setMessage("Bạn chắc chắn muốn hủy giao dịch?")
 
                 // Specifying a listener allows you to take an action before dismissing the dialog.
                 // The dialog is automatically dismissed when a dialog button is clicked.
                 .setPositiveButton("Có", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(SelectChairActivity.this, HomeActivity.class);
+                        Intent intent = new Intent(SelectChairActivity.this, FilmScheduleActivity.class);
                         startActivity(intent);
                     }
                 })

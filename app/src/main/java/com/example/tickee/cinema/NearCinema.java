@@ -6,7 +6,6 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -44,7 +43,7 @@ public class NearCinema extends Fragment {
         recycleViewAdapter.setItemClickListener(new ItemClickListener() {
             @Override
             public void onClick(View view, int pos) {
-                Intent intent = new Intent(getActivity(), ScheduleByCinema.class);
+                Intent intent = new Intent(getActivity(), ScheduleByCinemaActivity.class);
                 startActivity(intent);
 
             }

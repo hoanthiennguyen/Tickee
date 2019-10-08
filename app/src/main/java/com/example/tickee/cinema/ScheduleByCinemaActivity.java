@@ -10,9 +10,10 @@ import android.view.View;
 
 import com.example.tickee.BookTicketActivity;
 import com.example.tickee.R;
+import com.example.tickee.filmschedule.FilmScheduleActivity;
 import com.google.android.material.tabs.TabLayout;
 
-public class ScheduleByCinema extends AppCompatActivity {
+public class ScheduleByCinemaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +26,13 @@ public class ScheduleByCinema extends AppCompatActivity {
 
     }
 
-    public void onClickBookTiket(View view){
+    public void onClickBookTicket(View view){
         Intent intent = new Intent(this, BookTicketActivity.class);
+        startActivity(intent);
+    }
+    public void onClickFilmTitle(View view){
+        Intent intent = new Intent(this, FilmScheduleActivity.class);
+        intent.putExtra("cinemaWasChosen", true);
         startActivity(intent);
     }
 

@@ -40,7 +40,7 @@
         android:id="@+id/filmInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/trailerFilm"
+        android:layout_below="@id/frameTrailer"
         android:layout_alignBottom="@id/filmTitle"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="2dp"
@@ -48,6 +48,16 @@
         android:layout_toRightOf="@id/filmTitle"
         android:gravity="center_vertical"
         android:text=" 120 phút" />
+    <Button
+        android:onClick="onClickBookTicketOnFilmInformation"
+        android:text="Đặt vé"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/roundbackgroundred"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/frameTrailer"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"/>
 
     <TextView
         android:id="@+id/filmDescription"

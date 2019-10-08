@@ -13,7 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.example.tickee.cinema.CinemaFragment;
-import com.example.tickee.cinema.ScheduleByCinema;
+import com.example.tickee.cinema.ScheduleByCinemaActivity;
 import com.example.tickee.filmschedule.FilmScheduleActivity;
 import com.example.tickee.home.ClickOnPlayedFilmActivity;
 import com.example.tickee.home.ClickOnWillPlayFilmActivity;
@@ -93,7 +93,7 @@ public class    HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void onClickCinema(View view){
-        Intent intent = new Intent(this, ScheduleByCinema.class);
+        Intent intent = new Intent(this, ScheduleByCinemaActivity.class);
         startActivity(intent);
 
     }
