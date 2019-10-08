@@ -47,7 +47,7 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
                              boolean isLastChild, View convertView, ViewGroup parent) {
 
         final String childText = (String) getChild(groupPosition, childPosition);
-
+        String[] inputs = childText.split(" ");
         if (convertView == null) {
             LayoutInflater infalInflater = (LayoutInflater) this._context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -56,8 +56,12 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
 
         TextView txtListChild = (TextView) convertView
                 .findViewById(R.id.lblListItem);
+        TextView txtEndTime = convertView.findViewById(R.id.txtEndTime);
+        TextView txtPrice = convertView.findViewById(R.id.txtPrice);
 
-        txtListChild.setText(childText);
+        txtListChild.setText(inputs[0]);
+        txtEndTime.setText("-> " +inputs[1]);
+        txtPrice.setText(inputs[2]);
         return convertView;
     }
 

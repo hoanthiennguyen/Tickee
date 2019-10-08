@@ -42,9 +42,9 @@
 
         android:id="@+id/txtLichChieu"
         android:gravity="center"
-        android:textSize="30dp"
+        android:textSize="28dp"
         android:textColor="#ffffff"
-        android:text="Lịch Chiếu"
+        android:text="CNS Phạm Văn Đồng"
         android:layout_marginTop="32dp"/>
 
     <FrameLayout

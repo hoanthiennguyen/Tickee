@@ -66,18 +66,18 @@ public class FilmScheduleFragment extends Fragment {
 
         // Adding child data
         List<String> top250 = new ArrayList<String>();
-        top250.add("7:30 ~ 80k");
-        top250.add("9:00 ~ 70k");
+        top250.add("7:30 9h30 80k");
+        top250.add("9:00 10h30 70k");
 
         List<String> nowShowing = new ArrayList<String>();
-        nowShowing.add("18:00 ~ 60k");
-        nowShowing.add("20:00 ~ 70k");
-        nowShowing.add("22:00 ~ 60k");
+        nowShowing.add("18:00 20h 60k");
+        nowShowing.add("20:00 22h 70k");
+        nowShowing.add("22:00 0h 60k");
 
 
         List<String> comingSoon = new ArrayList<String>();
-        comingSoon.add("16:30 ~ 55k");
-        comingSoon.add("18:00 ~ 65k");
+        comingSoon.add("16:30 18h 55k");
+        comingSoon.add("18:00 18h30 65k");
 
 
         listDataChild.put(listDataHeader.get(0), top250); // Header, Child data
