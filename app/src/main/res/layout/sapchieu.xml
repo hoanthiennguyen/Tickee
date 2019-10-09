@@ -11,5 +11,15 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_margin="10dp">
+        <EditText
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundbuttongray"
+            android:inputType="textPersonName"
+            android:focusable="true"
+            android:hint="Search"/>
     </LinearLayout>
 </ScrollView>

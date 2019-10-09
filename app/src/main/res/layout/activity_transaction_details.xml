@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:background="@color/gray"
+        android:background="@color/lightgray"
         android:layout_height="wrap_content">
         <ImageButton
             android:src="@drawable/ic_arrow_back_black_24dp"

@@ -7,6 +7,8 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RatingBar;
+import android.widget.Toast;
 import android.widget.VideoView;
 
 import com.example.tickee.BookTicketActivity;
@@ -25,6 +27,7 @@ public class FilmScheduleActivity extends AppCompatActivity {
         Fragment beginFragment;
         if(getIntent().getBooleanExtra("cinemaWasChosen", false)){
             beginFragment = new FilmInformationFragment();
+            tabLayout.getTabAt(1).select();
         }
         else
             beginFragment = new FilmScheduleFragment();
@@ -90,6 +93,7 @@ public class FilmScheduleActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+
 
 
 

@@ -19,11 +19,13 @@
         android:layout_marginEnd="0dp">
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabSchedule"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lịch chiếu" />
 
         <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabFilmInformation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Thông tin" />
