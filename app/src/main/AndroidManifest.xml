@@ -9,12 +9,12 @@
         android:roundIcon="@drawable/appicon"
         android:supportsRtl="true"
         android:theme="@style/MyTheme">
-        <activity android:name=".cinema.ScheduleByCinemaActivity"></activity>
+        <activity android:name=".DiscountActivity"></activity>
+        <activity android:name=".cinema.ScheduleByCinemaActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".SuccessTransactionActivity"></activity>
+        <activity android:name=".SuccessTransactionActivity" />
         <activity android:name=".TransactionDetailsActivity" />
         <activity android:name=".TransactionHistoryActivity" />
-
         <activity android:name=".HomeActivity" />
         <activity android:name=".MakePaymentActivity" />
         <activity android:name=".SelectChairActivity" />

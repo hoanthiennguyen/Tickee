@@ -97,5 +97,11 @@ public class    HomeActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void onClickDiscount(View view){
+        Intent intent = new Intent(this, DiscountActivity.class);
+        startActivity(intent);
+
+    }
+
 
 }
