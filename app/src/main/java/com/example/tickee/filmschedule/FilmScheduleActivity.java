@@ -83,15 +83,12 @@ public class FilmScheduleActivity extends AppCompatActivity {
             view.setVisibility(View.INVISIBLE);
         }
     }
-    public void onClickBookTicketOnFilmInformation(View view){
-        if(getIntent().getBooleanExtra("cinemaWasChosen", false)){
-            Intent intent = new Intent(this, BookTicketActivity.class);
-            startActivity(intent);
-        }
-        else{
-            Intent intent = new Intent(this, FilmScheduleActivity.class);
-            startActivity(intent);
-        }
+
+    public void onClickBookTicketOnFilmInformation(View view) {
+
+        Intent intent = new Intent(this, FilmScheduleActivity.class);
+        startActivity(intent);
+
     }
 
 
