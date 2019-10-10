@@ -261,16 +261,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <Button
-                android:id="@+id/button6"
-                android:background="@drawable/roundbuttongray"
+                android:id="@+id/button7"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                />
+                android:background="@drawable/roundbuttongreen" />
             <TextView
-                android:text="Ghế thường"
+                android:text="Đang chọn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_weight="1"
             android:orientation="vertical"
@@ -278,12 +278,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/button6"
+                android:background="@drawable/roundbuttonwhite"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/roundbuttongreen" />
+                />
             <TextView
-                android:text="Đang chọn"
+                android:text="Ghế thường"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </LinearLayout>

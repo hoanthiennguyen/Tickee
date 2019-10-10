@@ -67,7 +67,7 @@ public class SelectChairActivity extends AppCompatActivity {
             if(view.getTag() != null &&view.getTag().toString().equals("vip"))
                 view.setBackgroundResource(R.drawable.roundbackgroundyellow);
             else
-                view.setBackgroundResource(R.drawable.roundbuttongray);
+                view.setBackgroundResource(R.drawable.roundbuttonwhite);
             view.setSelected(false);
             numberOfSelected--;
             btnContinue.setEnabled(false);

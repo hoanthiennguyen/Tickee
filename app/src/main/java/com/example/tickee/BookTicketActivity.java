@@ -162,7 +162,7 @@ public class BookTicketActivity extends AppCompatActivity {
                     removeCouple.setEnabled(false);
                 }
                 TextView priceTotal = (TextView) findViewById(R.id.priceTotal);
-                priceTotal.setText("Tổng tiền: " +totalMoney());
+                priceTotal.setText(totalMoney());
             }
         });
     }
@@ -189,7 +189,7 @@ public class BookTicketActivity extends AppCompatActivity {
             continueLayout.setBackground(getDrawable(R.color.green));
             btnContinue.setEnabled(true);
         }
-        return total;
+        return "Tổng tiền: " +total;
     }
     public void onClickContinue(View view){
         Intent intent = new Intent(this,SelectChairActivity.class);
