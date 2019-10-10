@@ -162,7 +162,7 @@ public class BookTicketActivity extends AppCompatActivity {
                     removeCouple.setEnabled(false);
                 }
                 TextView priceTotal = (TextView) findViewById(R.id.priceTotal);
-                priceTotal.setText(totalMoney());
+                priceTotal.setText("Tổng tiền: " +totalMoney());
             }
         });
     }

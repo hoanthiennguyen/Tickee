@@ -82,7 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Tổng tiền :160.000"
+                android:text="Tổng tiền :160.000 đ"
                 android:textSize="18dp" />
             <TextView android:textColor="@color/black"
                 android:id="@+id/textTransactionCode"
@@ -99,6 +99,7 @@
                 android:text="Địa chỉ: 190 Quang Trung, Phường 10, Gò Vấp, Hồ Chí Minh"
                 android:textSize="18dp" />
             <ImageView
+                android:onClick="onClickMap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
