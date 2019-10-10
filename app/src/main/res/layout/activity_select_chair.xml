@@ -89,6 +89,12 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <TextView
+            android:textSize="24sp"
+            android:gravity="center"
+            android:text="Vui lòng chọn ghế "
+            android:layout_width="match_parent"
+            android:layout_height="30sp"/>
         <View
             android:layout_width="match_parent"
             android:paddingLeft="20dp"
@@ -155,7 +161,7 @@
 
         <include layout="@layout/chair_row"></include>
         <include layout="@layout/chair_row"></include>
-        <include layout="@layout/chair_row"></include>
+        <include layout="@layout/chair_row_4_vip"></include>
         <include layout="@layout/chair_row_include_selected"></include>
         <include layout="@layout/chair_row"></include>
 
@@ -297,22 +303,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
-        <LinearLayout
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/roundbackgroundred" />
-            <TextView
-                android:text="Ghế đôi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
+
 
 
 

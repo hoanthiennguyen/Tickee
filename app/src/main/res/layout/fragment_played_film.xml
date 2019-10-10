@@ -54,10 +54,10 @@
             android:layout_marginRight="10dp"
             android:textSize="20dp"
             android:paddingHorizontal="10dp"
-            android:background="@drawable/roundbackgroundyellow"
+            android:background="@drawable/roundbackgroundred"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Xem lại"/>
+            android:text="Quan tâm"/>
     </androidx.cardview.widget.CardView>
 
 </FrameLayout>
