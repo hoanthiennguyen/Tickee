@@ -61,7 +61,7 @@
         <TextView
             android:layout_marginTop="10dp"
             android:textSize="18sp"
-            android:text="Mã vé: 0786546435"
+            android:text="Mã đặt vé: 0786546435"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <TextView
@@ -69,7 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Tổng tiền :160.000"
+            android:text="Tổng tiền :160.000 VND"
             android:textSize="18dp" />
         <TextView
             android:textSize="18dp"
@@ -89,10 +89,18 @@
             android:text="Thời gian: 18:30 ngày 07/10/2019"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-
-
-
-
+        <TextView
+            android:text="Địa chỉ: 190 Quang Trung, Phường 10, Gò Vấp, Hồ Chí Minh"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/map"/>
 
     </LinearLayout>
     <Button
