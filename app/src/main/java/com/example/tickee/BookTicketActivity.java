@@ -189,7 +189,7 @@ public class BookTicketActivity extends AppCompatActivity {
             continueLayout.setBackground(getDrawable(R.color.green));
             btnContinue.setEnabled(true);
         }
-        return "Tổng tiền: " +total;
+        return  total;
     }
     public void onClickContinue(View view){
         Intent intent = new Intent(this,SelectChairActivity.class);
