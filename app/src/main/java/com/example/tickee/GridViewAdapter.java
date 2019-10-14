@@ -50,6 +50,7 @@ public class GridViewAdapter extends BaseAdapter {
                 button.setBackgroundResource(R.drawable.roundbackgroundyellow);
                 break;
             case -1:
+                button.setText("X");
                 button.setBackgroundResource(R.drawable.roundbuttondisable);
                 break;
         }

@@ -10,6 +10,7 @@ import android.view.View;
 
 import com.example.tickee.BookTicketActivity;
 import com.example.tickee.R;
+import com.example.tickee.SelectChairActivity;
 import com.example.tickee.filmschedule.FilmScheduleActivity;
 import com.google.android.material.tabs.TabLayout;
 
@@ -27,7 +28,7 @@ public class ScheduleByCinemaActivity extends AppCompatActivity {
     }
 
     public void onClickBookTicket(View view){
-        Intent intent = new Intent(this, BookTicketActivity.class);
+        Intent intent = new Intent(this, SelectChairActivity.class);
         startActivity(intent);
     }
     public void onClickFilmTitle(View view){
