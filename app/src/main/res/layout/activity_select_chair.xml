@@ -233,7 +233,7 @@
         android:layout_below="@id/chairs"
         android:layout_alignRight="@id/chairs"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="40dp">
+        android:layout_marginTop="30dp">
         <LinearLayout
 
             android:layout_weight="1"
@@ -317,16 +317,19 @@
         android:orientation="vertical"
         android:layout_below="@id/typeOfChairs"
         android:layout_width="match_parent"
+        android:layout_marginTop="30sp"
         android:padding="10dp"
         android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <TextView
+                android:textSize="18sp"
                 android:text="Ghế thường (80.000 đ): "
-                android:layout_width="150dp"
+                android:layout_width="220dp"
                 android:layout_height="wrap_content"/>
             <TextView
+                android:textSize="18sp"
                 android:id="@+id/txtNormalSelected"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -336,9 +339,11 @@
             android:layout_height="wrap_content">
             <TextView
                 android:text="Ghế VIP (90.000 đ): "
-                android:layout_width="150dp"
+                android:layout_width="220dp"
+                android:textSize="18sp"
                 android:layout_height="wrap_content"/>
             <TextView
+                android:textSize="18sp"
                 android:id="@+id/txtVipSelected"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -350,9 +355,10 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:text="Tổng tiền: "
-                android:layout_width="150dp"
+                android:layout_width="220sp"
                 android:layout_height="wrap_content"/>
             <TextView
+                android:textSize="18sp"
                 android:id="@+id/txtTotal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
