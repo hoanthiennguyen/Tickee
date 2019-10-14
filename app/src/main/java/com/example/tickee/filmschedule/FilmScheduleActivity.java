@@ -14,6 +14,7 @@ import android.widget.VideoView;
 import com.example.tickee.BookTicketActivity;
 import com.example.tickee.HomeActivity;
 import com.example.tickee.R;
+import com.example.tickee.SelectChairActivity;
 import com.google.android.material.tabs.TabLayout;
 
 public class FilmScheduleActivity extends AppCompatActivity {
@@ -69,7 +70,7 @@ public class FilmScheduleActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void onClickFilmTime(View view){
-        Intent intent = new Intent(this, BookTicketActivity.class);
+        Intent intent = new Intent(this, SelectChairActivity.class);
         startActivity(intent);
     }
     public void onClickPlayTrailer(View view){

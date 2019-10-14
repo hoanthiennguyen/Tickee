@@ -122,51 +122,51 @@
         android:layout_height="wrap_content">
         <TextView
             android:layout_weight="1"
-            android:gravity="center"
             android:text="A"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <TextView
             android:text="B"
-            android:gravity="center"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <TextView
             android:text="C"
-            android:gravity="center"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <TextView
             android:text="D"
-            android:gravity="center"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-        <TextView
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="E"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+
+
     </LinearLayout>
-    <TableLayout
-        android:id="@+id/chairs"
-        android:layout_toRightOf="@id/characterIndex"
+<!--    <TableLayout-->
+<!--        android:id="@+id/chairs"-->
+<!--        android:layout_toRightOf="@id/characterIndex"-->
+<!--        android:layout_below="@id/screen"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <include layout="@layout/chair_row"></include>-->
+
+<!--        <include layout="@layout/chair_row_include_selected"></include>-->
+<!--        <include layout="@layout/chair_row"></include>-->
+<!--        <include layout="@layout/chair_row_4_vip"></include>-->
+
+<!--    </TableLayout>-->
+    <GridView
         android:layout_below="@id/screen"
-        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/characterIndex"
+        android:id="@+id/chairs"
+        android:verticalSpacing="10dp"
+        android:numColumns="8"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <include layout="@layout/chair_row"></include>
-        <include layout="@layout/chair_row"></include>
-
-        <include layout="@layout/chair_row_include_selected"></include>
-        <include layout="@layout/chair_row"></include>
-        <include layout="@layout/chair_row_4_vip"></include>
-
-    </TableLayout>
+        android:layout_height="wrap_content"></GridView>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_alignLeft="@id/chairs"
@@ -233,8 +233,9 @@
         android:layout_below="@id/chairs"
         android:layout_alignRight="@id/chairs"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="40dp">
         <LinearLayout
+
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"
@@ -242,12 +243,11 @@
             android:layout_height="wrap_content">
             <Button
                 android:id="@+id/button10"
-                android:text="X"
                 android:background="@drawable/roundbuttondisable"
                 android:textSize="20dp"
                 android:enabled="false"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 />
             <TextView
                 android:text="Ghế đã đặt"
@@ -262,8 +262,8 @@
             android:layout_height="wrap_content">
             <Button
                 android:id="@+id/button7"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:background="@drawable/roundbuttongreen" />
             <TextView
                 android:text="Đang chọn"
@@ -280,8 +280,8 @@
             <Button
                 android:id="@+id/button6"
                 android:background="@drawable/roundbuttonwhite"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 />
             <TextView
                 android:text="Ghế trống"
@@ -296,8 +296,8 @@
             android:layout_height="wrap_content">
             <Button
                 android:id="@+id/button8"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:background="@drawable/roundbackgroundyellow" />
             <TextView
                 android:text="Ghế VIP trống"
@@ -313,6 +313,53 @@
 
 
     </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@id/typeOfChairs"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Ghế thường (80.000 đ): "
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtNormalSelected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Ghế VIP (90.000 đ): "
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtVipSelected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Tổng tiền: "
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/btnContinue"
         android:layout_width="match_parent"
